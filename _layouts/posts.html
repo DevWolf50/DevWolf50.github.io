@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>{{site.title}}</title>
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="{{site.description}}">
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Sans|Droid+Serif|Raleway' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/icons/style.css">
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/main.css">
+              
+    </head>
+    
+    <body>
+    
+        <div class="header">
+
+        <h1>Joe Pal</h1>
+        <h2>A blog about my experiences and struggles learning how to code</h2>
+
+
+        </div>
+   
+        <div class="posts">
+            <div class="postPicture" style="background-image: url({{page.image}})"></div>
+            <h1 class="postTitle">{{page.title}}</h1>
+            {{content}}
+        
+        </div>
+        
+        <div class ="footer">
+            <p>Joseph Palomino &copy; 2015</p>
+        </div>
+        </div>
+    </body>
+    
+</html>

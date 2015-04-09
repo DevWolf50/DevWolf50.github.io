@@ -1,0 +1,21 @@
+---
+layout: default
+title: My home page
+---
+
+{% for post in site.posts limit:3 %}
+ <div class="bfeed">
+<a href="{{post.url}}" rel="bookmark">
+<div class="entry">
+    <p class="fix">1</p>
+    <div class ="wrapperStyle" style="background-image: url(../{{post.image}})"></div>
+    <h1 class="entryTitle">
+        {{post.title}}
+    
+    </h1>
+</div>
+</a>
+
+{% endfor %}
+    
+ </div>
