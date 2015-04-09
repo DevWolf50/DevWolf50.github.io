@@ -34,3 +34,17 @@ contactButton.on('click', function (e) {
     $('.social').toggleClass('socialHide');
 });
     
+
+
+var contentCard = $('.entry');
+
+contentCard.on('click', function(e) {
+    e.preventDefault();
+    $(this).siblings().toggle();
+    $(this).toggleClass('posts');
+    $('.entryTitle').toggleClass('postTitle');
+    $('.wrapperStyle').toggleClass('postPicture');
+    $('.filter').toggleClass('filterHide');
+    
+
+});

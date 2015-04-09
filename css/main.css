@@ -12,6 +12,11 @@ font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     font-size:1em;
     font-family: 'Droid Serif', serif;
@@ -329,12 +334,26 @@ p {
   border-bottom: 1.5px solid #2196F3;
   width: 50%;
   margin: auto;
+  position: relative;
+  transition: left 1s ease-in-out;
+  -webkit-transition: left 1s ease-in-out;
+  -moz-transition: left 1s ease-in-out;
+  -ms-transition: left 1s ease-in-out;
+  -o-transition: left 1s ease-in-out;
 }
+
+
 .filter h1 {
     color: #4a4a4a;
     font-size: 4rem;
     text-align: center;
     opacity: 0.85;
+}
+
+.filterHide {
+position:relative;
+left:3000px;
+    overflow: hidden;
 }
 
 .socialHide {
@@ -354,11 +373,10 @@ p {
 }
 .wrapperStyle {
   background: no-repeat;
-  background-image:{{post.image}};
   background-position: 80% 103%;
   background-size: 161%;
   height: 195px;
-  width: 97%;
+  max-width: 97%;
   margin: auto;
     
     
@@ -368,25 +386,29 @@ p {
     border: 5px solid #4a4a4a;
     background: #fff;
     width: 79.554%;
-    height: 335px;
+    max-height: 335px;
     margin: 60px auto;
     box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0px 6px 6px rgba(0,0,0,0.23);
     border-radius: 7px;
     position:relative;
     top:-1600px;
-    transition: box-shadow 0.3s;
+    overflow: hidden;
    
     
-   
+}
+
+.entryFullView {
+    width: 90%;
+    
 }
 
 /*animation effects*/
 .entry {
-    transition: top 6000ms cubic-bezier(0.68,-0.55,0.265,1.55);
-    -webkit-transition: top 3000ms cubic-bezier(0.68,-0.55,0.265,1.55);
-    -moz-transition: top 3000ms cubic-bezier(0.68,-0.55,0.265,1.55);
-    -ms-transition: top 3000ms cubic-bezier(0.68,-0.55,0.265,1.55);
-    -o-transition: top 3000ms cubic-bezier(0.68,-0.55,0.265,1.55);
+    transition: top 6000ms cubic-bezier(0.68,-0.55,0.265,1.55), width 0.5s ease,height 0.5s ease;
+    -webkit-transition: top 3000ms cubic-bezier(0.68,-0.55,0.265,1.55), width 0.5s ease,max-height 0.5s ease;
+    -moz-transition: top 3000ms cubic-bezier(0.68,-0.55,0.265,1.55), width 0.5s ease,max-height 0.5s ease;
+    -ms-transition: top 3000ms cubic-bezier(0.68,-0.55,0.265,1.55), width 0.5s ease,max-height 0.5s ease;
+    -o-transition: top 3000ms cubic-bezier(0.68,-0.55,0.265,1.55), width 0.5s ease,max-height 0.5s ease;
     
 }
 
@@ -399,6 +421,7 @@ p {
     display:block;
     padding: 10px 0px 0px 10px;
     opacity: 0.85;
+    transition: all 0.3s;
     
 }
 
@@ -411,16 +434,24 @@ p {
 
 /*----styles for posts page-----*/
 .postPicture {
-    height:300px;
+    max-height:300px;
     background-size: cover;
 }
 .posts {
+    max-height: 3000px;
     width: 90%;
     color:#787878;
     margin: 60px auto;
     padding:15px;
     box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0px 6px 6px rgba(0,0,0,0.23);
+    border:none;
     
+    
+}
+
+.posts:hover {
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0px 6px 6px rgba(0,0,0,0.23);
+    border: none;
 }
 
 .postTitle {
