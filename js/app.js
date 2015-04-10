@@ -84,6 +84,8 @@ $('.homeButton').on('click', function(e) {
 
         navToggle(e);
 
-    }
+    } else {
+      navToggle(e);
+      }
 
 });
