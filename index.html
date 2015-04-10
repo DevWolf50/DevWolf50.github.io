@@ -6,18 +6,15 @@ title: My home page
 {% for post in site.posts limit:3 %}
 <div class="entry">
     <a href="{{post.url}}" rel="bookmark">
-    <p class="fix">1</p>
     <div class ="wrapperStyle" style="background-image: url(../{{post.image}})"></div>
     <h1 class="entryTitle">
         {{post.title}}
-    
+
     </h1>
-        <p class="postDate">{{post.date | date: "%b"}}<br>{{post.date | date: "%d"}}</p><span class="icon-bookmark"></span>
+        <p class="postDate">{{post.date | date: "%d %b %Y"}}</p>
     <p>{{post.content}}</p>
     </a>
 </div>
 
 
 {% endfor %}
-    
-

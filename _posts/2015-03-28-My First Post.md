@@ -1,6 +1,7 @@
 ---
-layout: default 
+layout: default
 title: My second Post
+image: /img/beach.jpg
 tags: recent
 ---
 

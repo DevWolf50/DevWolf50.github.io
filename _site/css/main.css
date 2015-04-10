@@ -66,7 +66,7 @@ p {
 
 .icon-diamond {
     font-size: 4rem;
-    
+
 }
 
 .icon-home {
@@ -85,9 +85,16 @@ p {
 
 .icon-pencil {
   font-size: 2.5rem;
+  display:inline-block;
   position: relative;
   top: 14px;
   left: 14px;
+  transition: transform 0.3s;
+
+}
+
+.contactActive {
+  transform: rotate(90deg);
 }
 
 
@@ -115,13 +122,6 @@ p {
     left: 5px;
 }
 
-.icon-bookmark {
-  font-size: 5rem;
-  position: relative;
-  top: -302px;
-  left: 211px;
-}
-
 
 /*----styles for header-----*/
 
@@ -144,18 +144,18 @@ p {
     margin: 0;
     font-size:5rem;
     opacity: 0.85;
-    
+
 }
 
 .header h2 {
-    
+
   padding: 10px 5px;
   font-size: 1rem;
   border: 3px solid #fff;
   width: 75%;
   margin: auto;
   opacity: 0.85;
-    
+
 }
 
 /*----styles for navigation-----*/
@@ -195,7 +195,7 @@ p {
     right:9px;
     left:9px;
     top:30px;
-    
+
 }
 
 .menuButton span:before,
@@ -207,7 +207,7 @@ p {
     width:100%;
     background-color: #fff;
     content: "";
-        
+
 }
 
 .menuButton span::before {
@@ -248,13 +248,13 @@ p {
 
 .homeButton {
   top:275px;
-  left:301px; 
+  left:301px;
 }
 
 
 .topPostButton {
     top:354px;
-    left:301px; 
+    left:301px;
 }
 
 
@@ -262,14 +262,14 @@ p {
 .recentPostButton {
   top: 434px;
   left: 301px;
-  
+
 }
 
 .contactButton {
   top: 511px;
   left: 301px;
   z-index: 2;
-  
+
 }
 
 .nav h2 {
@@ -281,7 +281,7 @@ p {
   top: 17px;
   width: 200px;
   text-align: right;
-    
+
 }
 
 .navHide {
@@ -311,7 +311,7 @@ p {
   box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0px 6px 6px rgba(0,0,0,0.23);
   opacity: 1;
   transition: all 0.3s;
-    
+
 }
 
 .social:hover {
@@ -323,19 +323,19 @@ p {
 .twitter {
   top: 508px;
   left: 24px;
-    
+
 }
 
 .github {
   top: 508px;
   left: 113px;
-    
+
 }
 
 .facebook {
   top: 508px;
   left: 202px;
-    
+
 }
 
 /*----styles for filter-----*/
@@ -374,25 +374,20 @@ left:3000px;
 
 
 /*----styles for content cards-----*/
-.fix{
-    margin:0;
-    padding: 0;
-    height:6px;
-    opacity: 0;
-}
+
 .wrapperStyle {
   background: no-repeat;
   background-position: 80% 103%;
-  background-size: 161%;
+  background-size: cover;
   height: 195px;
-  max-width: 97%;
+  max-width: 100%;
   margin: auto;
-    
-    
+
+
 }
 
 .entry {
-    border: 5px solid #4a4a4a;
+    border: 6px solid #4a4a4a;
     background: #fff;
     width: 79.554%;
     max-height: 335px;
@@ -402,13 +397,13 @@ left:3000px;
     position:relative;
     top:-1600px;
     overflow: hidden;
-   
-    
+
+
 }
 
 .entryFullView {
     width: 90%;
-    
+
 }
 
 /*animation effects*/
@@ -418,7 +413,7 @@ left:3000px;
     -moz-transition: top 3000ms cubic-bezier(0.68,-0.55,0.265,1.55), width 0.5s ease,max-height 0.5s ease;
     -ms-transition: top 3000ms cubic-bezier(0.68,-0.55,0.265,1.55), width 0.5s ease,max-height 0.5s ease;
     -o-transition: top 3000ms cubic-bezier(0.68,-0.55,0.265,1.55), width 0.5s ease,max-height 0.5s ease;
-    
+
 }
 
 .slideIn {
@@ -432,7 +427,7 @@ left:3000px;
     padding: 10px 0px 0px 10px;
     opacity: 0.85;
     transition: all 0.3s;
-    
+
 }
 
 .entry:hover {
@@ -441,12 +436,9 @@ left:3000px;
 }
 
 .postDate {
- position: relative;
-  top: -240px;
-  left: 107px;
-  color: #fff;
-  text-align: center;
-  z-index: 1;
+  font-size:1rem;
+  margin-bottom:-5px;
+
 }
 
 
@@ -464,8 +456,8 @@ left:3000px;
     padding:15px;
     box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0px 6px 6px rgba(0,0,0,0.23);
     border:none;
-    
-    
+
+
 }
 
 .posts:hover {
@@ -492,12 +484,12 @@ left:3000px;
     margin:0;
     text-align: center;
     box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0px 6px 6px rgba(0,0,0,0.23)
-    
-    
+
+
 }
 
 .footer p {
     padding-top: 40px;
     opacity: 0.85;
-    
+
 }
