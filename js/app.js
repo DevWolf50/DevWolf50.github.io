@@ -9,12 +9,20 @@ $('.entry').eq(0).css('margin-top','11px')
 
 
 var menueButton = $('.menuButton');
-menueButton.on('click', function (e) {
-    "use strict";
+
+function navToggle (e) {
+ "use strict";
     e.preventDefault();
-    $(this).toggleClass('active'); //animates main manu button to rotate  
+    $(menueButton).toggleClass('active'); //animates main manu button to rotate  
     $('.lightBox').toggleClass('lightboxBlur');
     $('.nav').toggleClass('navHide'); //allows sub nav buttons to come into view
+}
+
+
+
+menueButton.on('click', function (e) {
+    
+    navToggle(e);
     
     if($('.social').hasClass('socialHide')) {
        } else {
@@ -37,14 +45,44 @@ contactButton.on('click', function (e) {
 
 
 var contentCard = $('.entry');
+var thisCurrentCard;
+var contentCardOpen = false;
+
 
 contentCard.on('click', function(e) {
     e.preventDefault();
-    $(this).siblings().toggle();
+    thisCurrentCard = $(this);
+    $(this).siblings().toggle(600,'swing', function(){});
     $(this).toggleClass('posts');
     $('.entryTitle').toggleClass('postTitle');
     $('.wrapperStyle').toggleClass('postPicture');
-    $('.filter').toggleClass('filterHide');
+    $('.filter').toggle(600,'swing', function(){});
+    if (contentCardOpen === false) {
+        contentCardOpen = true
+    } else {
+    contentCardOpen = false; 
+    }
+
     
+});
+
+    
+$('.homeButton').on('click', function(e) {
+    if(contentCardOpen === true) {
+        contentCardOpen = false;
+        e.preventDefault();
+         $(thisCurrentCard).siblings().toggle(600,'swing', function(){});
+        $(thisCurrentCard).toggleClass('posts');
+        $('.entryTitle').toggleClass('postTitle');
+        $('.wrapperStyle').toggleClass('postPicture');
+        $('.filter').toggle(600,'swing', function(){});
+        
+        navToggle(e);
+
+    } 
 
 });
+
+
+
+
