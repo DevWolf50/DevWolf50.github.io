@@ -12,6 +12,7 @@ title: My home page
         {{post.title}}
     
     </h1>
+        <p class="postDate">{{post.date | date: "%b"}}<br>{{post.date | date: "%d"}}</p><span class="icon-bookmark"></span>
     <p>{{post.content}}</p>
     </a>
 </div>

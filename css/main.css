@@ -115,6 +115,13 @@ p {
     left: 5px;
 }
 
+.icon-bookmark {
+  font-size: 5rem;
+  position: relative;
+  top: -302px;
+  left: 211px;
+}
+
 
 /*----styles for header-----*/
 
@@ -420,6 +427,7 @@ left:3000px;
 
 
 .entry h1 {
+    color: #2196F3;
     display:block;
     padding: 10px 0px 0px 10px;
     opacity: 0.85;
@@ -430,6 +438,15 @@ left:3000px;
 .entry:hover {
     box-shadow: 0 19px 35px rgba(0,0,0,0.30), 0px 15px 12px rgba(0,0,0,0.22);
     border-color: #2196F3;
+}
+
+.postDate {
+ position: relative;
+  top: -240px;
+  left: 107px;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
 }
 
 

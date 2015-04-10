@@ -2,6 +2,7 @@
 layout: posts
 title: My last Post
 image: /img/dmtn.jpg
+tags: recent
 
 ---
 

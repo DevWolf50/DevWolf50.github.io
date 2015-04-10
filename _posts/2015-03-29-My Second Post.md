@@ -1,6 +1,7 @@
 ---
 layout: default 
-title: My First Post
+title: My third Post
+tags: recent
 ---
 
 
