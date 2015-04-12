@@ -92,11 +92,19 @@ p {
   position: relative;
   top: 14px;
   left: 14px;
+  -webkit-transition: transform 0.3s;
+  -moz-transition: transform 0.3s;
+  -ms-transition: transform 0.3s;
+  -o-transition: transform 0.3s;
   transition: transform 0.3s;
 
 }
 
 .contactActive {
+ -webkit-transform: rotate(90deg);
+ -moz-transform: rotate(90deg);
+ -o-transform: rotate(90deg);
+ -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
@@ -495,4 +503,30 @@ left:3000px;
     padding-top: 40px;
     opacity: 0.85;
 
+}
+
+
+
+/*--------------styles for about Page---------------*/
+
+
+.aboutHeader {
+    height: 292px;
+}
+
+.circlePic {
+  background: url('../img/aboutMe.jpg') no-repeat;
+  background-size: cover;
+  height: 255px;
+  width: 255px;
+  border-radius: 100%;
+  margin: auto;
+    margin-top:10px;    
+
+
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0px 6px 6px rgba(0,0,0,0.23);
+}
+
+.filter.about {
+    width:75%;
 }

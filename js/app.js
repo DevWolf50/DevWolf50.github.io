@@ -1,8 +1,10 @@
 $(".headerText").hide().fadeIn(2000);
-$('.filter').hide().delay(1000).fadeIn(1000);
+$('.filter').hide().delay(500).fadeIn(1000);
 
 
 $(".entry").addClass('slideIn');
+$(".aboutHeader").addClass('aboutHeaderSlideIn');
+$('.aboutContent').addClass('aboutContentSlideIn');
 
 $('.entry').eq(0).css('margin-top','11px')
 

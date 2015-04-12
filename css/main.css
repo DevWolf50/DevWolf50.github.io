@@ -92,11 +92,19 @@ p {
   position: relative;
   top: 14px;
   left: 14px;
+  -webkit-transition: transform 0.3s;
+  -moz-transition: transform 0.3s;
+  -ms-transition: transform 0.3s;
+  -o-transition: transform 0.3s;
   transition: transform 0.3s;
 
 }
 
 .contactActive {
+ -webkit-transform: rotate(90deg);
+ -moz-transform: rotate(90deg);
+ -o-transform: rotate(90deg);
+ -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
@@ -411,7 +419,7 @@ left:3000px;
 
 /*animation effects*/
 .entry {
-    transition: top 6000ms cubic-bezier(0.68,-0.55,0.265,1.55), width 0.5s ease,height 0.5s ease;
+    transition: top 3000ms cubic-bezier(0.68,-0.55,0.265,1.55), width 0.5s ease,height 0.5s ease;
     -webkit-transition: top 3000ms cubic-bezier(0.68,-0.55,0.265,1.55), width 0.5s ease,max-height 0.5s ease;
     -moz-transition: top 3000ms cubic-bezier(0.68,-0.55,0.265,1.55), width 0.5s ease,max-height 0.5s ease;
     -ms-transition: top 3000ms cubic-bezier(0.68,-0.55,0.265,1.55), width 0.5s ease,max-height 0.5s ease;
@@ -495,4 +503,68 @@ left:3000px;
     padding-top: 40px;
     opacity: 0.85;
 
+}
+
+
+
+/*--------------styles for about Page---------------*/
+
+
+.aboutHeader {
+    height: 292px;
+    position:relative;
+    left:-400px;
+}
+
+.aboutHeader {
+    transition: left 1500ms cubic-bezier(0.68,-0.55,0.265,1.55);
+    -webkit-transition:left 1000ms cubic-bezier(0.68,-0.55,0.265,1.55);
+    -moz-transition: left 1000ms cubiz-bezier(0.68, -0.55,0.265,1.55);
+    -ms-transition: left 1000ms cubic-bezier(0.68,-0.55,0.265,1.55);
+    -o-transition: left 1000ms cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.aboutHeaderSlideIn {
+    left:0px;
+}
+
+.circlePic {
+  background: url('../img/aboutMe.jpg') no-repeat;
+  background-size: cover;
+  height: 255px;
+  width: 255px;
+  border-radius: 100%;
+  margin: auto;
+    margin-top:10px;    
+
+
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0px 6px 6px rgba(0,0,0,0.23);
+}
+
+.filter.about {
+    width:75%;
+}
+
+.aboutContent {
+    max-height: 3000px;
+    width: 90%;
+    color:#787878;
+    margin: 60px auto;
+    padding:15px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0px 6px 6px rgba(0,0,0,0.23);
+    border:none;
+    position: relative;
+    left: 600px;
+}
+
+.aboutContent {
+    transition: left 1000ms cubic-bezier(0.68,-0.55,0.265,1.55);
+    -webkit-transition: left 1000ms cubic-bezier(0.68,-0.55,0.265,1.55);
+    -moz-transition: left 1000ms cubic-bezier(0.68,-0.55,0.265,1.55);
+    -ms-transition: left 1000ms cubic-bezier(0.68,-0.55,0.265,1.55);
+    -o-transition: left 1000ms cubic-bezier(0.65,-0.55,0.265,1.55);
+}
+
+.aboutContentSlideIn {
+    left:0px;
 }

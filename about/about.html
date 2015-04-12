@@ -7,9 +7,9 @@
         <meta name="viewport" content="width=device-width">
         <meta name="description" content="{{site.description}}">
         <link href='http://fonts.googleapis.com/css?family=Josefin+Sans|Droid+Serif|Raleway' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="icons/style.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="../icons/style.css">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css">
 
 
     </head>
@@ -23,35 +23,34 @@
         <a href="https://twitter.com/Joe_Pal50"> <div class="social socialHide twitter"><span class="icon-twitter"></span></div></a>
         <a href="https://github.com/DevWolf50"><div class="social socialHide github"><span class="icon-github2"></span></div></a>
         <a href="https://www.facebook.com/joepal50"><div class="social socialHide facebook"><span class="icon-facebook"></span></div></a>
+        
+        
         <div class="lightBox">
-        <div class="header">
-
-        <h1 class="headerText">Joe Pal</h1>
-        <h2 class="headerText">A blog about my experiences and struggles learning how to code</h2>
-        </div>
-        <div class="filter">
-            <h1 class="filtertext">Recent</h1>
-        </div>
-            {% assign sorted_tags = site.tags | sorted%}
-            {% for tag in sorted_tags%}
             
-            {% assign t = tag | first %}
-            {% assign posts = tag | last %}
-            <p>{{ t }}</p>
-            {% endfor %}
+            <div class="aboutHeader">
+                <div class="circlePic">a</div>
 
-        <div class ="content">
+            </div>
+            
+            <div class="filter about">
+                <h1 class="filtertext">About Me</h1>
+            </div>
 
-            {{content}}
+            <div class ="aboutContent">
+                <p>Example text: Theres alot of good things in and about my life. But, it hasnt always been that way. I vestruggled alot to get where I'm at right now and even now my dreams are still in the distant. The big difference in the me now and me a year ago is that im actually working towars my dreams everyday. I now understand that it takes alot of hard work, heart, passion and a little luck to obtain these things I want. The great things is that desicions determine destiny. As cute as it sounds Destiny is not written in the stars; I have the ability every day to make the choices that will shape my life. </p>
 
+
+
+            </div>
+
+            <div class ="footer">
+                <p>Joseph Palomino &copy; 2015</p>
+            </div>
+            
+           
         </div>
-
-        <div class ="footer">
-            <p>Joseph Palomino &copy; 2015</p>
-        </div>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-          <script src="js/app.js"></script>
-        </div>
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+         <script src="../js/app.js"></script>
     </body>
 
 </html>
