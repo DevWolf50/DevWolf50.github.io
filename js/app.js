@@ -1,4 +1,4 @@
-$(".headerText").hide().fadeIn(2000);
+$(".headerText").hide().fadeIn(1800);
 $('.filter').hide().delay(500).fadeIn(1000);
 
 
@@ -74,7 +74,7 @@ contentCard.on('click', function(e) {
 });
 
 
-$('.homeButton').on('click', function(e) {
+$('.homeButton.main').on('click', function(e) {
     if(contentCardOpen === true) {
         contentCardOpen = false;
         e.preventDefault();

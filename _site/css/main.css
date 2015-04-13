@@ -179,7 +179,7 @@ p {
     border:none;
     border-radius:none;
     position: fixed;
-    left: 301px;
+    left: 80%;
     top: 195px;
     z-index: 3;
     overflow: hidden;
@@ -259,26 +259,31 @@ p {
 
 .homeButton {
   top:275px;
-  left:301px;
+  left:80%;
 }
 
 
-.topPostButton {
+.mainAboutButton {
     top:354px;
-    left:301px;
+    left:80%;
+
+}
+.mainAboutButton a {
+    color: #fff;
+
 }
 
 
 
 .recentPostButton {
   top: 434px;
-  left: 301px;
+  left: 80%;
 
 }
 
 .contactButton {
   top: 511px;
-  left: 301px;
+  left: 80%;
   z-index: 2;
 
 }
@@ -377,7 +382,7 @@ left:3000px;
 }
 
 .socialHide {
-    left: 301px;
+    left: 80%;
     opacity: 0;
 }
 
@@ -419,7 +424,7 @@ left:3000px;
 
 /*animation effects*/
 .entry {
-    transition: top 6000ms cubic-bezier(0.68,-0.55,0.265,1.55), width 0.5s ease,height 0.5s ease;
+    transition: top 3000ms cubic-bezier(0.68,-0.55,0.265,1.55), width 0.5s ease,height 0.5s ease;
     -webkit-transition: top 3000ms cubic-bezier(0.68,-0.55,0.265,1.55), width 0.5s ease,max-height 0.5s ease;
     -moz-transition: top 3000ms cubic-bezier(0.68,-0.55,0.265,1.55), width 0.5s ease,max-height 0.5s ease;
     -ms-transition: top 3000ms cubic-bezier(0.68,-0.55,0.265,1.55), width 0.5s ease,max-height 0.5s ease;
@@ -512,6 +517,20 @@ left:3000px;
 
 .aboutHeader {
     height: 292px;
+    position:relative;
+    left:-400px;
+}
+
+.aboutHeader {
+    transition: left 1500ms cubic-bezier(0.68,-0.55,0.265,1.55);
+    -webkit-transition:left 1000ms cubic-bezier(0.68,-0.55,0.265,1.55);
+    -moz-transition: left 1000ms cubiz-bezier(0.68, -0.55,0.265,1.55);
+    -ms-transition: left 1000ms cubic-bezier(0.68,-0.55,0.265,1.55);
+    -o-transition: left 1000ms cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.aboutHeaderSlideIn {
+    left:0px;
 }
 
 .circlePic {
@@ -521,7 +540,7 @@ left:3000px;
   width: 255px;
   border-radius: 100%;
   margin: auto;
-    margin-top:10px;    
+    margin-top:10px;
 
 
   box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0px 6px 6px rgba(0,0,0,0.23);
@@ -529,4 +548,58 @@ left:3000px;
 
 .filter.about {
     width:75%;
+}
+
+.aboutContent {
+    max-height: 3000px;
+    width: 90%;
+    color:#787878;
+    margin: 60px auto;
+    padding:15px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0px 6px 6px rgba(0,0,0,0.23);
+    border:none;
+    position: relative;
+    left: 600px;
+}
+
+
+
+.aboutContent {
+    transition: left 1000ms cubic-bezier(0.68,-0.55,0.265,1.55);
+    -webkit-transition: left 1000ms cubic-bezier(0.68,-0.55,0.265,1.55);
+    -moz-transition: left 1000ms cubic-bezier(0.68,-0.55,0.265,1.55);
+    -ms-transition: left 1000ms cubic-bezier(0.68,-0.55,0.265,1.55);
+    -o-transition: left 1000ms cubic-bezier(0.65,-0.55,0.265,1.55);
+}
+
+.aboutContentSlideIn {
+    left:0px;
+}
+
+.aboutSocialDiv {
+  margin: 0px auto 41%;
+  width: 50%;
+
+
+}
+.aboutSocial {
+  float: left;
+  width: 33.3333%;
+
+}
+
+.aboutSocialIcon {
+  color: #4a4a4a;
+  text-shadow: 0px 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
+
+.aboutSocialIcon:hover {
+  color: #2196F3;
+  text-shadow: 0px 19px 38px rgba(0,0,0,0.30), 0 12px 15px rgba(0,0,0,0.22);
+
+}
+
+.homeButton a {
+  color:#fff;
 }
