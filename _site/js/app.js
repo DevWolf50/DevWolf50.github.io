@@ -1,4 +1,4 @@
-$(".headerText").hide().fadeIn(2000);
+$(".headerText").hide().fadeIn(1800);
 $('.filter').hide().delay(500).fadeIn(1000);
 
 
