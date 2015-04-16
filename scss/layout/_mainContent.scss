@@ -21,6 +21,9 @@
   }
 }
 
+.filter.about {
+    width:75%;
+}
 
 
 .filterHide {
@@ -118,7 +121,7 @@
     background-size: cover;
 }
 .posts {
-    max-height: 3000px;
+    max-height: 30000px;
     width: 90%;
     color:#787878;
     margin: 60px auto;
@@ -134,4 +137,62 @@
   color: #4a4a4a;
   margin-top: 25px;
   font-size: 3.5rem;
+}
+
+
+
+//About Main Content-------------------------------
+.aboutContent {
+    max-height: 3000px;
+    width: 90%;
+    color:#787878;
+    margin: 60px auto;
+    padding:15px;
+    box-shadow: $level3;
+    border:none;
+    position: relative;
+    left: 600px;
+}
+
+
+
+.aboutContent {
+    transition: left 1000ms cubic-bezier(0.68,-0.55,0.265,1.55);
+    -webkit-transition: left 1000ms cubic-bezier(0.68,-0.55,0.265,1.55);
+    -moz-transition: left 1000ms cubic-bezier(0.68,-0.55,0.265,1.55);
+    -ms-transition: left 1000ms cubic-bezier(0.68,-0.55,0.265,1.55);
+    -o-transition: left 1000ms cubic-bezier(0.65,-0.55,0.265,1.55);
+}
+
+.aboutContentSlideIn {
+    left:0px;
+}
+
+.aboutSocialDiv {
+  margin: 0px auto 41%;
+  width: 50%;
+
+
+}
+.aboutSocial {
+  float: left;
+  width: 33.3333%;
+
+}
+
+.aboutSocialIcon {
+  color: $textColor;
+  text-shadow: $level4;
+
+  &:hover {
+    color: $primaryColor;
+    text-shadow: $level5;
+  }
+
+}
+
+
+
+.homeButton a {
+  color:#fff;
 }
