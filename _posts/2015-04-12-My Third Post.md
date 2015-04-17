@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Lets get Sassy
+image: /img/dmtn.jpg
 tags: top
 ---
 

@@ -38,13 +38,49 @@
             
 <div class="entry">
     <a href="/2015/04/12/My%20Third%20Post/" rel="bookmark">
-    <div class ="wrapperStyle" style="background-image: url(../)"></div>
+    <div class ="wrapperStyle" style="background-image: url(..//img/dmtn.jpg)"></div>
     <h1 class="entryTitle">
-        My First Post
+        Lets get Sassy
 
     </h1>
         <p class="postDate">12 Apr 2015</p>
-    <p><p>hey this is the last time I'm trying this for real though.</p>
+    <p><p>The other day I noticed a style on this website I wanted to change; so I opened my  ever-growing CSS page and painfully searched for the correct selector for about 30 minutes(exaggeration added for effect). Then I wanted to change some of the colors for a fresher look; so again, I searched the entire style sheet and wherever the old color was, I then had to paste in the new color. These are just two of many potential annoying situations in having to update your css file. Fortunately, it's been a big enough problem that other awesome people have created a solution in Sass. Sass is a precompiler that lets you add increased functionality to a sass file and then will convert that into valid CSS. With so many added benefits, I decided to learn Sass and  take my blog's CSS to newer heights. Here's my Sass conversion journey:
+<br>
+<br></p>
+
+<h2>Setting Up Camp</h2>
+
+
+<p><br>
+Setting up sass on your computer is pretty simple; since it's written in ruby all we have to do is gem install sass. Boom! It's downloaded and ready to go. I know there are some sass programs with a GUI but, since  git and Jekyll, I've become super comfortable in the terminal/command prompt.; so I execute Sass in the terminal. Next, in my blog project folder I created another folder called SCSS and moved my giant main.css folder into my new scss folder and changed the name to "-<em>main.scss(more on that later). Then I created folders to help break up my styles into smaller manageable files. For example, I have layout folder that holds a </em>header.sccs , <em>nav.scss , and a </em>footer.sccs file. That way if I ever need to change a nav style I know exactly where to go and that file won't be cluttered with other layout styles. Once I had my file structure established I returned to the command line and executed sass --watch scss:css. This will watch for any changes my main.scss file and will convert it into a main.css file in the CSS folder. Magic!
+<br>
+<br></p>
+
+<h2>Things I loved</h2>
+
+
+<p><br></p>
+
+<h3>Partials</h3>
+
+
+<p>As web developers, one of our main concerns is website performance. Very few people are going to wait more than a few seconds for your web page to load. That's why we use one big CSS file in the first place; so the browser doesn't have to make multiple requests to the server for different CSS style sheets.With Sass, you don't have to worry about that. You can organize your styles into as many files as your organizational heart desires because, Sass will convert them all into one main scss file. The way it works is by using the @import function. So what I've done is broken up my old  1 page CSS file into smaller partial scss files. Then in my main.scss file I import the smaller files like this:  @import "<em>header.scss". by naming my header file like this </em>header.scss, Sass will know not to compile; therefore only getting compiled if I import it into my main.scss file. So by importing all my smaller scss files into one main file, Sass will then create one long performance friendly CSS file for our browser.
+<br>
+<br></p>
+
+<p><h3>Variables</h2>
+<br>
+Ever wish you could use variables in CSS? In Sass you can! This makes it extremely easy to update repetitive styles that you use throughout your site like colors. One of the first things I did was I created a file called _variables.sccs and then made variables for the colors I used on my site. For example, I set a variable named $primaryColor and pasted that everywhere that primary color was. Now if I ever need to change my primary color all I have to do the change that one variable. Magic!  I used this with box-shadows to easily define what level I want certain divs to appear at, animations, Font-family combinations, and other styles that are constantly repeated throughout my CSS. Variables make it extremely easy to update styles.
+<br>
+<br>
+<h3>Mixins</h3>
+<br>
+Just when I thought it couldn't have gotten any better.
+Mixins allow to define many different properties within a single object. One of the ways I've used this is with web compatibility properties. I know when doing a CSS animation I need to type out: transition, -webKit-transition, -moz-transition, -o-transition, etc; so that the transition will work with all browsers. With Sass mixins, I can define a mixin with al of those properties and include arguments to fill out the rest of my transition. Now every time I want to add a new animation I can just @include the mixin and sass will convert it to the valid CSS.Magic! I've also used Mixins to help position and size elements as well. Since you can you use math functions in Sass you can get pinpoint accuracy of positioning and size. Mixins are where Sass really shines.
+<br>
+<br>
+<h2>My Final Thoughts</h2>
+I was able to fully successfully convert all my CSS over to sass which currently styles this site. Some concepts I wasn't able to cover but make sass even cooler are that you can use conditions and loops. For example, you can set  the margins and padding of an element depending on its size. Even though CSS is great and may seem easy to work with, Sass really allows us to organize our styles and gives us some tools to creatively solve style problems. I know gooing forward I'll continue to use Sass for future projects!</p>
 </p>
     </a>
 </div>
@@ -59,7 +95,27 @@
 
     </h1>
         <p class="postDate">08 Apr 2015</p>
-    <p><p>So you've decided that you you want to learn how to program.</p>
+    <p><p>How to start learning how to program
+<br>
+I've tried to learn how to program a few times and each time after a couple weeks I would move on to something else. I was just going about it the wrong way and I didn’t know where to start. There are so many different languages, areas of the field, educational sites, and books that it became overwhelming. And even when I had found something I liked it was hard to stick with it due to a lack of structure. So this last go around I got serious; I did the research, found the right resources, built myself a learning plan, and last but not least discovered my learning style. All this with a dash of motivation totally crushed my previous failed attempts. Here is how I started the right way:
+<br>
+<br>
+Resourcefulness
+<br>
+First, I researched and googled the heck out of the phrase "learn how to code". I went through dozens of articles, website reviews, and videos. It's magnificent how far online education has come; you can literally learn anything on the Internet. Did you know that big name universities like Harvard and Stanford offer a lot of their course material(with videos of the actual lectures) on iTunes university for FREE! So I took notes and jotted down all the different courses. Next I went through and tested the ones out that looked interesting and ended up sticking with 2 main learning courses. The first was Harvard's famous CS50 course(intro to computer science). This course is offered on their website, iTunes university, and many other places. It's a great place to start especially if your an absolute beginner like me. It goes over programming principles and really helps you establish an overall foundation of what we can do with computers. At the same time, I also signed up for the web development track on teamtreehouse.com. Treehouse is one of the many online coding schools that offers hundreds of videos, and code challenges to aid you in your learning. I chose treehouse because they have a good mix of instructors that really teach the best practices within the industry. Most of them have free trials; so go try a few and then pick the one you like the most. Taking both the CS50 course and front end dev course has really helped me to see the bigger picture as apposed to just taking the front end course. In most cases, I’ve been able to use what I've learned in one course to help me solve problems in the other. The researching phase is where the road starts and is very important. Make sure to spend the time to try different things and discover what you like. However, it's very easy to spend too much time on this step; so after you've picked a few resources to learn from, just start learning.
+<br>
+<br>
+Plan to Execute
+<br>
+After I found my pools of knowledge I realized in order for me to stick with it on a continual basis I needed to set up a learning schedule. Both courses outline the material and how long they expect each section will take to go through. I used Trello (a planning app) and created a “programming learning board.” For each course, I made a list of all the sections I wanted to learn along with the time it would take to learn it. Every week I moved the sections I planned on learning that week into a ‘learning this week” list. Then every day I would move a couple of those sections into “learning today” list. Finally after I had completed a section I would move it into a “learned” list. Trello makes all of this extremely easy and helps you to visualize your learning plan. At the beginning of every day, I knew which sections I had to complete and if I was having an off day I would pick something that seemed more enjoyable to learn. Then I would set a time each day dedicated to learning. This is usually in the evenings after the little ones are in bed. Since I have a full-time job and a family I have to clearly communicate to others my schedule and  become extremely efficient with my time. I no longer get sucked into the internet searching black hole, excessively watch TV, and other time wasting activities.  But, to be honest, I really enjoy this and most days I have to force myself to put down the code and go to bed. At the end of every week, I review my learning board, pat myself on the back for the sections I’ve learned and make commitments to do better on the ones I missed. All this planning makes executing a lot easier.
+<br>
+<br>
+Discover your inner learner
+<br>
+"I remember that I don't remember" a problem I faced in my previous attempts would be remembering what I had just learned. I would go through the sections, watch the videos, do the coding challenges and then a couple weeks later I would have a hard time remembering. Initially, I think it's harder because everything is so foreign and you're still trying to figure out the "why" to things. This time around however I did two things differently. First I used a flash card system called Anki. After each video I would set up a flash card on the most important things like how to set media queries or "how can you add an event listener using JavaScript". The great thing about Anki is that as you start studying the cards and telling Anki which ones are easy, Anki will then only have you study which ones you're struggling with. It's the best tool to help you memorize in the beginning. The second adjustment I made was I picked a side project to work on alongside the course. So as I learned key concepts I was able to instantaneously apply them to a real-world problem. This is what has helped progress the fastest. There's truth in the famous Chris Coyier saying " just build websites". The more we use the things we learn the more ingrained they become. The key is that I had to discover what was going to help me retain the valuable gold I was learning.  You can implement anything you want: projects, taking notes, creating flash cards, making presentations, or finding a group. The best part is at the end of the day I'm in charge of my own learning development and I can easily adjust my style based on what I'm trying to learn.
+<br>
+<br>
+Resourcefulness, preparation, reflection: these are the three solid pillars I have built the rest of my learning development on.  In a job and in life one of the most important strengths to have is to be able to learn new things and to learn them quickly! Untill next time.....</p>
 </p>
     </a>
 </div>
