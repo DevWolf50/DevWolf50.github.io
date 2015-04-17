@@ -1,0 +1,28 @@
+.footer {
+    background: $backgroundColor;
+    width: 100%;
+    height: 120px;
+    margin:0;
+    text-align: center;
+    box-shadow: $level3;
+
+    p {
+      color: $textColor;
+      padding-top: 17px;
+      opacity: 0.85;
+      width: 75%;
+      height: 56%;
+      margin: auto;
+      border: 5px solid $iconColor;
+    }
+
+
+}
+
+
+
+.footerLine {
+  width: 17%;
+  margin: -4% auto;
+  border-bottom: 1px solid $primaryColor;
+}

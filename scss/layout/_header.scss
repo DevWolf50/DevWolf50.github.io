@@ -1,0 +1,65 @@
+
+
+//main header styles-----------------------------------------
+.header {
+  text-align: center;
+  background:linear-gradient(rgba(0,0,0,0.2),
+                             rgba(0,0,0,0.2)),
+                            url('../img/lmtn.jpg') no-repeat;
+  background-position: 57% 29%;
+  background-size: 232%;
+  height: 232px;
+  box-shadow: $level3;
+  padding-top: 35px;
+  margin: 0 0 20px 0;
+  color: $backgroundColor;
+  border: none;
+
+  h1 {
+    margin: 0;
+    font-size:5rem;
+    opacity: 0.85;
+  }
+
+  h2 {
+    padding: 10px 5px;
+    font-size: 1rem;
+    border: 3px solid $backgroundColor;
+    width: 75%;
+    margin: auto;
+    opacity: 0.85;
+  }
+}
+
+
+//about page header styles-----------------------------------------
+
+
+.aboutHeader {
+    height: 292px;
+    position:relative;
+    left:-400px;
+}
+
+.aboutHeader {
+    transition: left 1500ms cubic-bezier(0.68,-0.55,0.265,1.55);
+    -webkit-transition:left 1000ms cubic-bezier(0.68,-0.55,0.265,1.55);
+    -moz-transition: left 1000ms cubic-bezier(0.68, -0.55,0.265,1.55);
+    -ms-transition: left 1000ms cubic-bezier(0.68,-0.55,0.265,1.55);
+    -o-transition: left 1000ms cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.aboutHeaderSlideIn {
+    left:0px;
+}
+
+.circlePic {
+  background: url('../img/aboutMe.jpg') no-repeat;
+  background-size: cover;
+  height: 255px;
+  width: 255px;
+  border-radius: 100%;
+  margin: auto;
+  margin-top:10px;
+  box-shadow: $level2;
+}
