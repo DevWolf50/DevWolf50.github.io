@@ -16,8 +16,32 @@
   border: none;
 
   @media (min-width:500px) {
-    height:399px;
-    padding:98px;
+    height:299px;
+    padding:61px;
+  }
+
+  @media (min-width:500px) {
+    height:299px;
+    padding:61px;
+  }
+
+  @media (min-width:800px) {
+    height:478px;
+    padding:61px;
+    padding-top:120px;
+  }
+
+  @media (min-width:1190px) {
+    height:711px;
+    padding:188px;
+    padding-top:216px;
+    background-size: 150%;
+  }
+  @media (min-width:1600px) {
+    height:956px;
+    padding:405px;
+    padding-top:216px;
+    background-size: 150%;
   }
 
 
@@ -25,6 +49,16 @@
     margin: 0;
     font-size:5rem;
     opacity: 0.85;
+
+    @media (min-width:800px) {
+      font-size:7rem;
+    }
+    @media (min-width:1190px) {
+      font-size:9rem;
+    }
+    @media (min-width:1600px) {
+      font-size:10rem;
+    }
   }
 
   h2 {
@@ -34,6 +68,10 @@
     width: 75%;
     margin: auto;
     opacity: 0.85;
+
+    @media (max-width: 321px) {
+      font-size:.7rem;
+    }
 
 
   }

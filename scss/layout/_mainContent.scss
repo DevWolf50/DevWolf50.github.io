@@ -1,4 +1,8 @@
 
+.content {
+  margin-bottom:21%;
+}
+
 
 //main "filter" heading----------------------
 
@@ -18,6 +22,13 @@
       font-size: 4rem;
       text-align: center;
       opacity: 0.85;
+
+      @media (min-width:800px){
+        font-size:5rem;
+      }
+      @media (min-width:1190px){
+        font-size:6rem;
+      }
   }
 }
 
@@ -32,10 +43,6 @@
   overflow: hidden;
 }
 
-.socialHide {
-  left: 80%;
-  opacity: 0;
-}
 
 
 //Content Card Picture styles----------------------
@@ -50,6 +57,21 @@
 
   @media (min-width:500px) {
     height:265.75px;
+  }
+
+  @media (min-width:800px) {
+    height:278px;
+  }
+
+  @media (min-width:975px) {
+    height:294px;
+  }
+
+  @media (min-width:1190px) {
+    height:318px;
+  }
+  @media (min-width:1600px) {
+    height:390px;
   }
 
 }
@@ -70,6 +92,33 @@
 
     @media (min-width:500px) {
       max-height:407px;
+      top:-1800px;
+    }
+
+    @media (min-width:700px) {
+      max-height:442px;
+      width: 61%;
+    }
+    @media (min-width:800px) {
+      max-height:481px;
+      width: 55%;
+      top:-2200px;
+    }
+    @media (min-width:975px) {
+      max-height:525px;
+      width: 43%;
+      top:-2200px;
+    }
+
+    @media (min-width:1190px) {
+      max-height:574px;
+      width: 43%;
+      top:-2600px;
+    }
+    @media (min-width:1600px) {
+      max-height:677px;
+      width: 40%;
+      top:-3200px;
     }
 
     h1 {
@@ -124,8 +173,18 @@
 
 
 .postPicture {
-    max-height:300px;
+    height:300px;
     background-size: cover;
+
+    @media (min-width:800px) {
+      height: 376px;
+    }
+    @media (min-width:1190px) {
+      height: 501px;
+    }
+    @media (min-width:1600px) {
+      height: 637px;
+    }
 }
 .posts {
     max-height: 30000px;
@@ -135,6 +194,17 @@
     padding:15px;
     box-shadow: $level3;
     border:none;
+
+    @media (min-width:800px) {
+      width: 78%;
+    }
+
+    @media (min-width:850px) {
+      width: 78%;
+    }
+    @media (min-width:1190px) {
+      width: 65%;
+    }
 
 
 }

@@ -39,6 +39,10 @@ p {
   font-size: 1.45rem;
   font-size: 1.1rem;
   padding: 1px 12px;
+
+  @media (max-width:321px) {
+    font-size:.9rem;
+  }
 }
 
 .singleChar {

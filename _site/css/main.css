@@ -390,6 +390,9 @@ p {
   font-size: 1.45rem;
   font-size: 1.1rem;
   padding: 1px 12px; }
+  @media (max-width: 321px) {
+    p {
+      font-size: .9rem; } }
 
 .singleChar {
   color: #2196F3; }
@@ -405,18 +408,27 @@ p {
   position: relative;
   left: 6px;
   top: 5px; }
+  @media (max-width: 321px) {
+    .icon-ruby {
+      font-size: 3.1rem; } }
 
 .icon-home {
   font-size: 3rem;
   position: relative;
   top: 9px;
   left: 8px; }
+  @media (max-width: 321px) {
+    .icon-home {
+      font-size: 2.9rem; } }
 
 .icon-calendar {
   font-size: 3rem;
   position: relative;
   top: 8px;
   left: 9px; }
+  @media (max-width: 321px) {
+    .icon-calendar {
+      font-size: 2.8rem; } }
 
 .icon-pencil {
   font-size: 2.5rem;
@@ -429,6 +441,9 @@ p {
   -ms-transition: transform 0.3s;
   -o-transition: transform 0.3s;
   transition: transform 0.3s; }
+  @media (max-width: 321px) {
+    .icon-pencil {
+      font-size: 2.3rem; } }
 
 .contactActive {
   -webkit-transform: rotate(90deg);
@@ -443,6 +458,9 @@ p {
   color: #212121;
   top: 14px;
   left: 10px; }
+  @media (max-width: 321px) {
+    .icon-twitter {
+      font-size: 2.8rem; } }
 
 .icon-github2 {
   font-size: 3rem;
@@ -450,6 +468,9 @@ p {
   color: #212121;
   top: 9px;
   left: 9px; }
+  @media (max-width: 321px) {
+    .icon-github2 {
+      font-size: 2.8rem; } }
 
 .icon-facebook {
   font-size: 3rem;
@@ -457,6 +478,9 @@ p {
   color: #212121;
   top: 5px;
   left: 5px; }
+  @media (max-width: 321px) {
+    .icon-facebook {
+      font-size: 2.8rem; } }
 
 .menuButton {
   background: #2196F3;
@@ -483,9 +507,27 @@ p {
     outline: none; }
   .menuButton:hover {
     box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.3), 0px 15px 12px rgba(0, 0, 0, 0.22); }
+  @media (max-width: 321px) {
+    .menuButton {
+      height: 60px;
+      width: 60px; } }
   @media (min-width: 500px) {
     .menuButton {
-      left: 85%; } }
+      left: 85%;
+      top: 8px; } }
+  @media (min-width: 700px) {
+    .menuButton {
+      left: 89%;
+      top: 10px; } }
+  @media (min-width: 800px) {
+    .menuButton {
+      left: 90%; } }
+  @media (min-width: 1190px) {
+    .menuButton {
+      left: 93%; } }
+  @media (min-width: 1600px) {
+    .menuButton {
+      left: 95%; } }
   .menuButton span {
     display: block;
     height: 4px;
@@ -508,6 +550,9 @@ p {
       top: 15px; }
     .menuButton span:after {
       bottom: 15px; }
+    @media (max-width: 321px) {
+      .menuButton span {
+        top: 28px; } }
   .menuButton .active span {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -523,6 +568,10 @@ p {
   z-index: 1;
   opacity: 1;
   transition: all 0.3s; }
+  @media (max-width: 321px) {
+    .nav {
+      width: 60px;
+      height: 60px; } }
   .nav h2 {
     color: #212121;
     font-family: "Josefin Sans", sans-serif;
@@ -532,29 +581,236 @@ p {
     top: 17px;
     width: 200px;
     text-align: right; }
+    @media (max-width: 321px) {
+      .nav h2 {
+        font-size: 1.5rem; } }
 
 .homeButton {
   left: 80%;
   top: 275px; }
+  @media (min-width: 500px) {
+    .homeButton {
+      left: 85%; } }
+  @media (min-width: 700px) {
+    .homeButton {
+      left: 89%; } }
+  @media (min-width: 800px) {
+    .homeButton {
+      left: 90%; } }
+  @media (min-width: 1190px) {
+    .homeButton {
+      left: 93%; } }
+  @media (min-width: 1600px) {
+    .homeButton {
+      left: 95%; } }
+  @media (min-width: 500px) {
+    .homeButton {
+      left: 80%;
+      top: 88px; } }
+  @media (min-width: 500px) and (min-width: 500px) {
+    .homeButton {
+      left: 85%; } }
+  @media (min-width: 500px) and (min-width: 700px) {
+    .homeButton {
+      left: 89%; } }
+  @media (min-width: 500px) and (min-width: 800px) {
+    .homeButton {
+      left: 90%; } }
+  @media (min-width: 500px) and (min-width: 1190px) {
+    .homeButton {
+      left: 93%; } }
+  @media (min-width: 500px) and (min-width: 1600px) {
+    .homeButton {
+      left: 95%; } }
 
 .mainAboutButton {
   left: 80%;
   top: 355px; }
+  @media (min-width: 500px) {
+    .mainAboutButton {
+      left: 85%; } }
+  @media (min-width: 700px) {
+    .mainAboutButton {
+      left: 89%; } }
+  @media (min-width: 800px) {
+    .mainAboutButton {
+      left: 90%; } }
+  @media (min-width: 1190px) {
+    .mainAboutButton {
+      left: 93%; } }
+  @media (min-width: 1600px) {
+    .mainAboutButton {
+      left: 95%; } }
   .mainAboutButton a {
     color: #fff; }
+  @media (max-width: 321px) {
+    .mainAboutButton {
+      left: 80%;
+      top: 345px; } }
+  @media (max-width: 321px) and (min-width: 500px) {
+    .mainAboutButton {
+      left: 85%; } }
+  @media (max-width: 321px) and (min-width: 700px) {
+    .mainAboutButton {
+      left: 89%; } }
+  @media (max-width: 321px) and (min-width: 800px) {
+    .mainAboutButton {
+      left: 90%; } }
+  @media (max-width: 321px) and (min-width: 1190px) {
+    .mainAboutButton {
+      left: 93%; } }
+  @media (max-width: 321px) and (min-width: 1600px) {
+    .mainAboutButton {
+      left: 95%; } }
+
+  @media (min-width: 500px) {
+    .mainAboutButton {
+      left: 80%;
+      top: 168px; } }
+  @media (min-width: 500px) and (min-width: 500px) {
+    .mainAboutButton {
+      left: 85%; } }
+  @media (min-width: 500px) and (min-width: 700px) {
+    .mainAboutButton {
+      left: 89%; } }
+  @media (min-width: 500px) and (min-width: 800px) {
+    .mainAboutButton {
+      left: 90%; } }
+  @media (min-width: 500px) and (min-width: 1190px) {
+    .mainAboutButton {
+      left: 93%; } }
+  @media (min-width: 500px) and (min-width: 1600px) {
+    .mainAboutButton {
+      left: 95%; } }
 
 .recentPostButton {
   left: 80%;
   top: 435px; }
+  @media (min-width: 500px) {
+    .recentPostButton {
+      left: 85%; } }
+  @media (min-width: 700px) {
+    .recentPostButton {
+      left: 89%; } }
+  @media (min-width: 800px) {
+    .recentPostButton {
+      left: 90%; } }
+  @media (min-width: 1190px) {
+    .recentPostButton {
+      left: 93%; } }
+  @media (min-width: 1600px) {
+    .recentPostButton {
+      left: 95%; } }
+  @media (max-width: 321px) {
+    .recentPostButton {
+      left: 80%;
+      top: 415px; } }
+  @media (max-width: 321px) and (min-width: 500px) {
+    .recentPostButton {
+      left: 85%; } }
+  @media (max-width: 321px) and (min-width: 700px) {
+    .recentPostButton {
+      left: 89%; } }
+  @media (max-width: 321px) and (min-width: 800px) {
+    .recentPostButton {
+      left: 90%; } }
+  @media (max-width: 321px) and (min-width: 1190px) {
+    .recentPostButton {
+      left: 93%; } }
+  @media (max-width: 321px) and (min-width: 1600px) {
+    .recentPostButton {
+      left: 95%; } }
+
+  @media (min-width: 500px) {
+    .recentPostButton {
+      left: 80%;
+      top: 248px; } }
+  @media (min-width: 500px) and (min-width: 500px) {
+    .recentPostButton {
+      left: 85%; } }
+  @media (min-width: 500px) and (min-width: 700px) {
+    .recentPostButton {
+      left: 89%; } }
+  @media (min-width: 500px) and (min-width: 800px) {
+    .recentPostButton {
+      left: 90%; } }
+  @media (min-width: 500px) and (min-width: 1190px) {
+    .recentPostButton {
+      left: 93%; } }
+  @media (min-width: 500px) and (min-width: 1600px) {
+    .recentPostButton {
+      left: 95%; } }
 
 .contactButton {
   left: 80%;
   top: 515px;
   z-index: 2; }
+  @media (min-width: 500px) {
+    .contactButton {
+      left: 85%; } }
+  @media (min-width: 700px) {
+    .contactButton {
+      left: 89%; } }
+  @media (min-width: 800px) {
+    .contactButton {
+      left: 90%; } }
+  @media (min-width: 1190px) {
+    .contactButton {
+      left: 93%; } }
+  @media (min-width: 1600px) {
+    .contactButton {
+      left: 95%; } }
+  @media (max-width: 321px) {
+    .contactButton {
+      left: 80%;
+      top: 485px; } }
+  @media (max-width: 321px) and (min-width: 500px) {
+    .contactButton {
+      left: 85%; } }
+  @media (max-width: 321px) and (min-width: 700px) {
+    .contactButton {
+      left: 89%; } }
+  @media (max-width: 321px) and (min-width: 800px) {
+    .contactButton {
+      left: 90%; } }
+  @media (max-width: 321px) and (min-width: 1190px) {
+    .contactButton {
+      left: 93%; } }
+  @media (max-width: 321px) and (min-width: 1600px) {
+    .contactButton {
+      left: 95%; } }
+
+  @media (min-width: 500px) {
+    .contactButton {
+      left: 80%;
+      top: 328px; } }
+  @media (min-width: 500px) and (min-width: 500px) {
+    .contactButton {
+      left: 85%; } }
+  @media (min-width: 500px) and (min-width: 700px) {
+    .contactButton {
+      left: 89%; } }
+  @media (min-width: 500px) and (min-width: 800px) {
+    .contactButton {
+      left: 90%; } }
+  @media (min-width: 500px) and (min-width: 1190px) {
+    .contactButton {
+      left: 93%; } }
+  @media (min-width: 500px) and (min-width: 1600px) {
+    .contactButton {
+      left: 95%; } }
 
 .navHide {
   top: 195px;
   opacity: 0; }
+  @media (min-width: 500px) {
+    .navHide {
+      top: 8px; } }
+  @media (min-width: 700px) {
+    .navHide {
+      top: 10px; } }
+  .navHide h2 {
+    left: 9999px; }
 
 .lightBox {
   background: transparent;
@@ -579,36 +835,91 @@ p {
   .social:hover {
     box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.3), 0px 15px 12px rgba(0, 0, 0, 0.22);
     border-color: #2196F3; }
+  @media (max-width: 321px) {
+    .social {
+      width: 65px;
+      height: 65px; } }
 
 .twitter {
   top: 508px;
   left: 5%; }
+  @media (max-width: 321px) {
+    .twitter {
+      top: 485px; } }
   @media (min-width: 500px) {
     .twitter {
-      left: 25%; } }
-  @media (min-width: 600px) {
+      top: 328px; } }
+  @media (min-width: 500px) {
     .twitter {
-      left: 25%; } }
+      left: 28%; } }
+  @media (min-width: 700px) {
+    .twitter {
+      left: 36%; } }
+  @media (min-width: 850px) {
+    .twitter {
+      left: 40%; } }
+  @media (min-width: 875px) {
+    .twitter {
+      left: 54%; } }
+  @media (min-width: 1190px) {
+    .twitter {
+      left: 65%; } }
 
 .github {
   top: 508px;
   left: 30%; }
+  @media (max-width: 321px) {
+    .github {
+      top: 485px; } }
   @media (min-width: 500px) {
     .github {
-      left: 40%; } }
-  @media (min-width: 600px) {
+      top: 328px; } }
+  @media (min-width: 500px) {
     .github {
-      left: 40%; } }
+      left: 47%; } }
+  @media (min-width: 700px) {
+    .github {
+      left: 55%; } }
+  @media (min-width: 850px) {
+    .github {
+      left: 59%; } }
+  @media (min-width: 875px) {
+    .github {
+      left: 66%; } }
+  @media (min-width: 1190px) {
+    .github {
+      left: 74%; } }
 
 .facebook {
   top: 508px;
   left: 55%; }
+  @media (max-width: 321px) {
+    .facebook {
+      top: 485px; } }
   @media (min-width: 500px) {
     .facebook {
-      left: 57.5%; } }
-  @media (min-width: 600px) {
+      top: 328px; } }
+  @media (min-width: 500px) {
     .facebook {
-      left: 60%; } }
+      left: 66%; } }
+  @media (min-width: 700px) {
+    .facebook {
+      left: 74%; } }
+  @media (min-width: 850px) {
+    .facebook {
+      left: 78%; } }
+  @media (min-width: 1190px) {
+    .facebook {
+      left: 83%; } }
+
+.socialHide {
+  left: 80%;
+  opacity: 0;
+  pointer-events: none;
+  cursor: default; }
+  @media (min-width: 1190px) {
+    .socialHide {
+      left: 93%; } }
 
 .header {
   text-align: center;
@@ -621,10 +932,44 @@ p {
   margin: 0 0 20px 0;
   color: #fff;
   border: none; }
+  @media (min-width: 500px) {
+    .header {
+      height: 299px;
+      padding: 61px; } }
+  @media (min-width: 500px) {
+    .header {
+      height: 299px;
+      padding: 61px; } }
+  @media (min-width: 800px) {
+    .header {
+      height: 478px;
+      padding: 61px;
+      padding-top: 120px; } }
+  @media (min-width: 1190px) {
+    .header {
+      height: 711px;
+      padding: 188px;
+      padding-top: 216px;
+      background-size: 150%; } }
+  @media (min-width: 1600px) {
+    .header {
+      height: 956px;
+      padding: 405px;
+      padding-top: 216px;
+      background-size: 150%; } }
   .header h1 {
     margin: 0;
     font-size: 5rem;
     opacity: 0.85; }
+    @media (min-width: 800px) {
+      .header h1 {
+        font-size: 7rem; } }
+    @media (min-width: 1190px) {
+      .header h1 {
+        font-size: 9rem; } }
+    @media (min-width: 1600px) {
+      .header h1 {
+        font-size: 10rem; } }
   .header h2 {
     padding: 10px 5px;
     font-size: 1rem;
@@ -632,6 +977,9 @@ p {
     width: 75%;
     margin: auto;
     opacity: 0.85; }
+    @media (max-width: 321px) {
+      .header h2 {
+        font-size: .7rem; } }
 
 .aboutHeader {
   height: 292px;
@@ -658,6 +1006,9 @@ p {
   margin-top: 10px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.13), 0px 3px 6px rgba(0, 0, 0, 0.23); }
 
+.content {
+  margin-bottom: 21%; }
+
 .filter {
   border-bottom: 1.5px solid #2196F3;
   width: 50%;
@@ -673,6 +1024,12 @@ p {
     font-size: 4rem;
     text-align: center;
     opacity: 0.85; }
+    @media (min-width: 800px) {
+      .filter h1 {
+        font-size: 5rem; } }
+    @media (min-width: 1190px) {
+      .filter h1 {
+        font-size: 6rem; } }
 
 .filter.about {
   width: 75%; }
@@ -681,10 +1038,6 @@ p {
   position: relative;
   left: 3000px;
   overflow: hidden; }
-
-.socialHide {
-  left: 80%;
-  opacity: 0; }
 
 .wrapperStyle {
   background: no-repeat;
@@ -696,6 +1049,18 @@ p {
   @media (min-width: 500px) {
     .wrapperStyle {
       height: 265.75px; } }
+  @media (min-width: 800px) {
+    .wrapperStyle {
+      height: 278px; } }
+  @media (min-width: 975px) {
+    .wrapperStyle {
+      height: 294px; } }
+  @media (min-width: 1190px) {
+    .wrapperStyle {
+      height: 318px; } }
+  @media (min-width: 1600px) {
+    .wrapperStyle {
+      height: 390px; } }
 
 .entry {
   border: 6px solid #4a4a4a;
@@ -710,7 +1075,32 @@ p {
   overflow: hidden; }
   @media (min-width: 500px) {
     .entry {
-      max-height: 407px; } }
+      max-height: 407px;
+      top: -1800px; } }
+  @media (min-width: 700px) {
+    .entry {
+      max-height: 442px;
+      width: 61%; } }
+  @media (min-width: 800px) {
+    .entry {
+      max-height: 481px;
+      width: 55%;
+      top: -2200px; } }
+  @media (min-width: 975px) {
+    .entry {
+      max-height: 525px;
+      width: 43%;
+      top: -2200px; } }
+  @media (min-width: 1190px) {
+    .entry {
+      max-height: 574px;
+      width: 43%;
+      top: -2600px; } }
+  @media (min-width: 1600px) {
+    .entry {
+      max-height: 677px;
+      width: 40%;
+      top: -3200px; } }
   .entry h1 {
     color: #2196F3;
     display: block;
@@ -739,8 +1129,17 @@ p {
   top: 0px; }
 
 .postPicture {
-  max-height: 300px;
+  height: 300px;
   background-size: cover; }
+  @media (min-width: 800px) {
+    .postPicture {
+      height: 376px; } }
+  @media (min-width: 1190px) {
+    .postPicture {
+      height: 501px; } }
+  @media (min-width: 1600px) {
+    .postPicture {
+      height: 637px; } }
 
 .posts {
   max-height: 30000px;
@@ -750,6 +1149,15 @@ p {
   padding: 15px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23);
   border: none; }
+  @media (min-width: 800px) {
+    .posts {
+      width: 78%; } }
+  @media (min-width: 850px) {
+    .posts {
+      width: 78%; } }
+  @media (min-width: 1190px) {
+    .posts {
+      width: 65%; } }
 
 .postTitle {
   color: #4a4a4a;

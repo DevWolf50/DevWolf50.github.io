@@ -4,7 +4,33 @@
 
 @mixin iconPosition($value) {
   left: 80%;
-  top:($value)
+  top:($value);
+
+  @media (min-width:500px) {
+    left: 85%;
+
+  }
+
+  @media (min-width:700px) {
+    left: 89%;
+
+  }
+
+  @media (min-width:800px) {
+    left: 90%;
+
+  }
+
+  @media (min-width:1190px) {
+    left: 93%;
+
+  }
+  @media (min-width:1600px) {
+    left: 95%;
+
+  }
+
+
 }
 
 
@@ -12,12 +38,24 @@
   top:508px;
   left:$value;
 
+  @media (max-width:321px) {
+    top:485px;
+  }
+
+  @media (min-width:500px) {
+    top:328px;
+  }
+
 }
 
 @mixin socialIconStyle {
   font-size: 3rem;
   position: relative;
   color: $iconColor;
+
+  @media (max-width:321px) {
+    font-size:2.8rem;
+  }
 }
 
 
@@ -38,6 +76,10 @@
   left: 6px;
   top: 5px;
 
+  @media (max-width:321px) {
+    font-size:3.1rem;
+  }
+
 }
 
 .icon-home {
@@ -45,6 +87,11 @@
   position: relative;
   top: 9px;
   left: 8px;
+
+  @media (max-width:321px) {
+    font-size:2.9rem;
+  }
+
 }
 
 .icon-calendar {
@@ -52,6 +99,10 @@
   position: relative;
   top: 8px;
   left: 9px;
+
+  @media (max-width:321px) {
+    font-size:2.8rem;
+  }
 }
 
 .icon-pencil {
@@ -65,6 +116,10 @@
   -ms-transition: transform 0.3s;
   -o-transition: transform 0.3s;
   transition: transform 0.3s;
+
+  @media (max-width:321px) {
+    font-size:2.3rem;
+  }
 
 }
 
@@ -127,9 +182,33 @@
     &:hover {
       box-shadow: $level5;
     }
+    @media (max-width:321px) {
+      height:60px;
+      width:60px;
+    }
 
     @media (min-width:500px) {
       left: 85%;
+      top:8px;
+    }
+
+    @media (min-width:700px) {
+      left: 89%;
+      top:10px;
+    }
+
+    @media (min-width:800px) {
+      left: 90%;
+
+    }
+
+    @media (min-width:1190px) {
+      left: 93%;
+
+    }
+    @media (min-width:1600px) {
+      left: 95%;
+
     }
 
     span {
@@ -142,6 +221,7 @@
         top:30px;
         transition: transform 0.3s;
         -webkit-transition: -webkit-transform 0.3s;
+
 
         &:before, &:after {
           position: absolute;
@@ -160,6 +240,10 @@
 
         &:after {
           bottom: 15px;
+        }
+
+        @media (max-width:321px) {
+          top:28px;
         }
       }
 
@@ -188,6 +272,11 @@
     opacity: 1;
     transition: all 0.3s;
 
+    @media (max-width:321px) {
+      width: 60px;
+      height:60px;
+    }
+
     h2 {
       color: $iconColor;
       font-family: $headingFont;
@@ -198,6 +287,10 @@
       width: 200px;
       text-align: right;
 
+      @media (max-width:321px) {
+        font-size:1.5rem;
+      }
+
     }
 }
 
@@ -205,6 +298,11 @@
 
 .homeButton {
   @include iconPosition(275px);
+
+  @media (min-width:500px) {
+    @include iconPosition(88px)
+  }
+
 }
 
 
@@ -215,6 +313,14 @@
     color: #fff;
   }
 
+  @media (max-width:321px) {
+    @include iconPosition(275px + 70);
+  }
+
+  @media (min-width:500px) {
+    @include iconPosition(88px + 80);
+  }
+
 }
 
 
@@ -222,11 +328,28 @@
 .recentPostButton {
   @include iconPosition(275px +80 +80);
 
+  @media (max-width:321px) {
+    @include iconPosition(275px +70 +70);
+  }
+
+  @media (min-width:500px) {
+    @include iconPosition(88px + 80 +80);
+  }
+
 }
 
 .contactButton {
   @include iconPosition(275px +80 +80 +80);
   z-index: 2;
+
+  @media (max-width:321px) {
+    @include iconPosition(275px +70 +70 +70);
+  }
+
+  @media (min-width:500px) {
+    @include iconPosition(88px + 80 +80 +80);
+  }
+
 
 }
 
@@ -234,6 +357,19 @@
 .navHide {
     top: 195px;
     opacity: 0;
+
+
+    @media (min-width:500px) {
+      top:8px;
+    }
+
+    @media (min-width:700px) {
+      top:10px;
+    }
+
+    h2{
+      left:9999px;
+    }
 }
 
 .lightBox {
@@ -246,6 +382,7 @@
   background: $backgroundColor;
   opacity: 0.1;
 }
+
 
 .social {
   background: $backgroundColor;
@@ -264,7 +401,17 @@
     border-color: $primaryColor;
   }
 
+
+
+  @media (max-width:321px) {
+    width:65px;
+    height:65px;
+  }
+
 }
+
+
+
 
 
 
@@ -274,35 +421,81 @@
   @include socialIconPosition(5%);
 
   @media (min-width:500px) {
-    left:(5% + 20%);
+    left:(5% + 23%);
   }
 
-  @media (min-width:600px) {
-    left:(5% + 20%);
+  @media (min-width:700px) {
+    left:(5% + 31%);
   }
+
+  @media (min-width:850px) {
+    left:(5% + 35%);
+  }
+  @media (min-width:875px) {
+    left:(5% + 49%);
+  }
+  @media (min-width:1190px) {
+    left:(5% + 60%);
+  }
+
+
 }
 
 .github {
   @include socialIconPosition(30%);
 
   @media (min-width:500px) {
-    left:(30% + 10%);
+    left:(30% + 17%);
   }
 
-  @media (min-width:600px) {
-    left:(30% + 10%);
+  @media (min-width:700px) {
+    left:(30% + 25%);
   }
+
+  @media (min-width:850px) {
+    left:(30% + 29%);
+  }
+  @media (min-width:875px) {
+    left:(30% + 36%);
+  }
+  @media (min-width:1190px) {
+    left:(30% + 44%);
+  }
+
+
 }
 
 .facebook {
   @include socialIconPosition(55%);
 
   @media (min-width:500px) {
-    left:(55% + 2.5%);
+    left:(55% + 11%);
   }
 
-  @media (min-width:600px) {
-    left:(55% + 5%);
+  @media (min-width:700px) {
+    left:(55% + 19%);
   }
+
+  @media (min-width:850px) {
+    left:(55% + 23%);
+  }
+  @media (min-width:1190px) {
+    left:(55% + 28%);
+  }
+
+
+
+}
+
+.socialHide {
+  left: 80%;
+  opacity: 0;
+
+  @media (min-width:1190px) {
+    left:93%;
+  }
+
+  pointer-events:none;
+  cursor:default;
 
 }
