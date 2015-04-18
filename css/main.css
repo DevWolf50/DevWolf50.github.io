@@ -553,11 +553,12 @@ p {
     @media (max-width: 321px) {
       .menuButton span {
         top: 28px; } }
-  .menuButton .active span {
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg); }
+
+.active span {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
 
 .nav {
   background: #212121;
