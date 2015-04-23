@@ -54,6 +54,14 @@ contactButton.on('click', function (e) {
 var contentCard = $('.entry');
 var thisCurrentCard;
 var contentCardOpen = false;
+function rePositionScroll() {
+  var mq = window.matchMedia('(max-width:800px)');
+  if(mq.matches) {
+    $("html,body").animate({scrollTop:"280px"});
+  }else {
+    $("html,body").animate({scrollTop:"950px"});
+  }
+};
 
 
 contentCard.on('click', function(e) {
@@ -64,6 +72,8 @@ contentCard.on('click', function(e) {
     $('.entryTitle').toggleClass('postTitle');
     $('.wrapperStyle').toggleClass('postPicture');
     $('.filter').toggle(600,'swing', function(){});
+    rePositionScroll();
+    console.log(rePositionScroll());
     if (contentCardOpen === false) {
         contentCardOpen = true
     } else {
