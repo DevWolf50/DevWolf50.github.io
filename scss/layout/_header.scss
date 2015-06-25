@@ -87,10 +87,20 @@
     height: 292px;
     position:relative;
     left:-400px;
+
+    @media (min-width:550px) {
+      left:-600px;
+    }
+    @media (min-width:750px) {
+      left:-800px;
+    }
+    @media (min-width:950px) {
+      left:-1000px;
+    }
 }
 
 .aboutHeader {
-    transition: left 1500ms cubic-bezier(0.68,-0.55,0.265,1.55);
+    transition: left 1000ms cubic-bezier(0.68,-0.55,0.265,1.55);
     -webkit-transition:left 1000ms cubic-bezier(0.68,-0.55,0.265,1.55);
     -moz-transition: left 1000ms cubic-bezier(0.68, -0.55,0.265,1.55);
     -ms-transition: left 1000ms cubic-bezier(0.68,-0.55,0.265,1.55);
@@ -110,4 +120,15 @@
   margin: auto;
   margin-top:10px;
   box-shadow: $level2;
+
+  @media (min-width:800px) {
+    height: 285px;
+    width: 285px;
+  }
+  @media (min-width:1190px) {
+    height: 300px;
+    width: 300px;
+  }
+
+
 }

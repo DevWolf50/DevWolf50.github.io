@@ -1,6 +1,13 @@
 
 .content {
   margin-bottom:21%;
+
+  @media (min-width: 500px) {
+      margin-bottom:26%;
+  }
+  @media (min-width: 975px) {
+      margin-bottom:17%;
+  }
 }
 
 
@@ -11,11 +18,11 @@
   width: 50%;
   margin: auto;
   position: relative;
-  transition: left 1s ease-in-out;
-  -webkit-transition: left 1s ease-in-out;
-  -moz-transition: left 1s ease-in-out;
-  -ms-transition: left 1s ease-in-out;
-  -o-transition: left 1s ease-in-out;
+  transition: left .5s ease-in-out;
+  -webkit-transition: left .5s ease-in-out;
+  -moz-transition: left .5s ease-in-out;
+  -ms-transition: left .5s ease-in-out;
+  -o-transition: left .5s ease-in-out;
 
   h1 {
       color: $textColor;
@@ -34,6 +41,17 @@
 
 .filter.about {
     width:75%;
+
+    @media (min-width:500px) {
+      width:50%;
+    }
+
+
+    @media (min-width:950px) {
+      width:44%;
+      margin-top:40px;
+    }
+
 }
 
 
@@ -229,6 +247,34 @@
     border:none;
     position: relative;
     left: 600px;
+
+    @media (min-width:500px) {
+      margin-bottom:129px;
+    }
+    @media (min-width:600px) {
+      margin-bottom:164px;
+      left:700px;
+    }
+    @media (min-width:700px) {
+      margin-bottom:202px;
+      left:800px;
+    }
+    @media (min-width:800px) {
+      width:68%;
+      margin-bottom:241px;
+      left:900px;
+    }
+    @media (min-width:975px) {
+      width:65%;
+      margin-bottom:170px;
+      left:1000px;
+
+    }
+    @media (min-width:1190px) {
+      width:59%;
+      margin-bottom:170px;
+      left:1300px;
+    }
 }
 
 
@@ -248,6 +294,25 @@
 .aboutSocialDiv {
   margin: 0px auto 41%;
   width: 50%;
+
+  @media (min-width:600px) {
+    margin: 0px 28% 41%;
+  }
+  @media (min-width:800px) {
+    margin: 0px 29% 41%;
+  }
+  @media (min-width:800px) {
+    margin: 0px 35% 41%;
+    width:30%;
+  }
+  @media (min-width:975px) {
+    margin: 0px 36.5% 25%;
+    width:30%;
+  }
+  @media (min-width:1190px) {
+    margin: 0px 37% 25%;
+    width:30%;
+  }
 
 
 }
