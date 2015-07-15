@@ -1,19 +1,220 @@
 .portfolio {
   h1 {
-    opacity: .85;
+    opacity: .65;
+    font-size: 4rem;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: $iconColor;
   }
 
   h2 {
-    opacity: .90;
+    opacity: .65;
+    font-size: 2rem;
+    color: $primaryColor;
+    margin-left: 5px;
+    margin-right: 5px;
+
   }
 
   h3 {
     opacity: .90;
+    font-size: 1rem;
+    color: $textColor;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  header {
+    margin-bottom: 40px;
   }
 }
 
 .portfolioHeader {
-  color: $primaryColor;
-  text-align: center;
+  background:url('../img/lowPoly.jpg') center no-repeat;
+  background-size: 200%;
+
   height: 300px;
+
+}
+
+.whiteWrapper {
+  background: white;
+  opacity: 0.1;
+  position: relative;
+  z-index: 1;
+}
+
+.portfolioHeaderHeading {
+  color: $iconColor;
+  text-align: center;
+  position: absolute;
+  top: 70px;
+
+}
+
+
+//about section --------------------------------
+
+.portfolioAboutSection {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.portfolioCirclePic {
+  width: 190px;
+  height: 190px;
+  position: relative;
+  z-index: 1;
+}
+
+.circleDiv {
+  @extend .portfolioCirclePic;
+  border-radius: 100%;
+  background: $primaryColor;
+  opacity: 0.4;
+  position: absolute;
+  top: 0px;
+  z-index: 4;
+
+}
+.circleDivLeft {
+  left: 6px;
+}
+
+.circleDivRight {
+  right: 6px;
+  background: $iconColor;
+}
+
+.portfoilioAboutHeader {
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.portfolioFilterAbout {
+  width: 95% !important;
+  text-align: center;
+  border: none;
+  margin-bottom: 40px;
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.portfolioAboutContent {
+  box-shadow: none;
+  padding: 0;
+  width: auto;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.portfolioContactButton {
+  @include mainButton(white,$primaryColor);
+  margin-bottom: 40px;
+}
+
+//reviews section ------------------------------
+
+.reviewsBackground {
+  background: linear-gradient(
+      rgba(33, 150, 243, .9),
+      rgba(33, 150, 243, .9)),
+      url('../img/polyM.jpg');
+
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+
+  li{
+    &:first-child {
+      margin-bottom: 60px;
+    }
+  }
+  h2{
+    color: white;
+    opacity: .75;
+    font-size: 1.4rem;
+
+  }
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  p{
+    font-size: .8rem;
+    color: $textColor;
+  }
+}
+
+
+
+
+//Skills Section------------------------
+
+.skills {
+
+  li {
+    position: relative;
+  }
+}
+
+.smallCircle {
+  @include circleStats(1,$primaryColor,white);
+}
+
+.MediumCircle {
+  @include circleStats(2,$primaryColor,white);
+}
+
+.largeCircle {
+  @include circleStats(3,$primaryColor,white);
+}
+
+.skillHtml{
+
+}
+
+.skillJavascript {
+  top: -67px;
+  left: 78px;
+}
+
+.skillGulp {
+  top: -109px;
+  left: 23px;
+}
+
+.skillExpress {
+  top:-106px;
+}
+
+.skillCss {
+  top: -189px;
+  left: 66px;
+}
+
+.skillSass {
+  top:-278px;
+}
+
+.skillNode {
+  top: -950px;
+  left: 182px;
+}
+
+.skillDesign {
+  top: -490px;
+  left: 169px;
+}
+
+.skillResp {
+  top:-623px;
+  left:60px;
 }

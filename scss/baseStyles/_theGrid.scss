@@ -1,0 +1,75 @@
+
+//calculates the width of each collum based on the num of collums and num of gutters
+@mixin gridCalc($numCol,$numGut) {
+  width:percentage((( 65 * $numCol ) + ( 20 * $numGut ))/1000);
+}
+
+
+.grid-container {
+  width: 100%;
+
+  >[class^="grid-"] {
+    float: left;
+    margin: 1% 0 1% 2%;
+
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      float: right;
+    }
+
+  }
+}
+
+
+
+
+// widths for each collumns
+.grid-1 {
+  @include gridCalc(1,0);
+}
+.grid-2 {
+  @include gridCalc(2,1);
+}
+.grid-3 {
+  @include gridCalc(3,2);
+}
+.grid-4 {
+  @include gridCalc(4,3);
+}
+.grid-5 {
+  @include gridCalc(5,4);
+}
+.grid-6 {
+  @include gridCalc(6,5);
+}
+.grid-7 {
+  @include gridCalc(7,6);
+}
+.grid-8 {
+  @include gridCalc(8,7);
+}
+.grid-9 {
+  @include gridCalc(9,8);
+}
+.grid-10 {
+  @include gridCalc(10,9);
+}
+.grid-11 {
+  @include gridCalc(11,10);
+}
+.grid-12 {
+  @include gridCalc(12,11);
+}
+
+
+
+
+.pullLeft {
+  float: left !important;
+}
+
+.pullRight {
+  float: right !important;
+}

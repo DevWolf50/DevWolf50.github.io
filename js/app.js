@@ -1,5 +1,5 @@
-$(".headerText").hide().fadeIn(1800);
-$('.filter').hide().delay(500).fadeIn(1000);
+$(".fadeIn").hide().fadeIn(1800);
+$('.delayFadeIn').hide().delay(500).fadeIn(1000);
 
 
 $(".entry").addClass('slideIn');

@@ -48,3 +48,24 @@ p {
 .singleChar {
     color:$primaryColor;
 }
+
+ul {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*clear fix*/
+ // .group::after,::before {
+ //   content:"";
+ //   display:table;
+ //   clear:both;
+ // }

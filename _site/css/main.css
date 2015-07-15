@@ -1281,6 +1281,18 @@ p {
 .homeButton a {
   color: #fff; }
 
+.portfolio h1 {
+  opacity: .85; }
+.portfolio h2 {
+  opacity: .90; }
+.portfolio h3 {
+  opacity: .90; }
+
+.portfolioHeader {
+  color: #2196F3;
+  text-align: center;
+  height: 300px; }
+
 .footer {
   background: #fff;
   width: 100%;

@@ -4,6 +4,7 @@ $primaryColor: #2196F3; //blue
 $backgroundColor: #fff; //white
 $textColor: #4a4a4a; //light grey
 $iconColor: #212121; //dark smoke grey
+$secondaryColor: #2ecc71; //emerald
 
 //fonts
 $headingFont: 'Josefin Sans', sans-serif;
@@ -19,3 +20,59 @@ $level5: 0px 19px 38px rgba(0,0,0,0.30), 0px 15px 12px rgba(0,0,0,0.22);
 
 //transitions
 $slideInOut: cubic-bezier(0.65,-0.55,0.265,1.55);
+
+
+//mixins---------------------------------
+
+@mixin mainButton($firstColor,$secondColor) {
+  box-shadow: $level2;
+  background: $firstColor;
+  color: $secondColor;
+  border: 3px solid $secondColor;
+  text-align: center;
+  width:30%;
+  margin: auto;
+
+  h1 {
+    color: $secondColor;
+    margin: 7px;
+  }
+  h2 {
+    color: $secondColor;
+    margin: 7px;
+  }
+  h3 {
+    color: $secondColor;
+    margin: 7px;
+  }
+  p{
+    color: $secondColor;
+    margin: 7px;
+  }
+}
+
+
+@mixin circleStats($importance,$color1,$color2) {
+  border-radius: 100%;
+  background: $color1;
+  color: $color2;
+  text-align: center;
+  margin:auto;
+  margin:2px;
+  @if $importance == 1 {
+    width:60px;
+    height:60px;
+    opacity: .75;
+  }
+  @if $importance == 2 {
+    width:80px;
+    height:80px;
+    opacity: .80;
+  }
+  @if $importance == 3 {
+    width:110px;
+    height:110px;
+    opacity: .90;
+  }
+
+}
