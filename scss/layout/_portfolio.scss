@@ -27,6 +27,10 @@
   header {
     margin-bottom: 40px;
   }
+
+  section {
+    padding: 2rem 0;
+  }
 }
 
 .portfolioHeader {
@@ -56,8 +60,8 @@
 //about section --------------------------------
 
 .portfolioAboutSection {
-  margin-top: 50px;
-  margin-bottom: 20px;
+
+
 }
 
 .portfolioCirclePic {
@@ -100,6 +104,14 @@
   h2 {
     font-size: 1.5rem;
   }
+
+
+}
+
+#filterAboutSub {
+    font-size: 1.2rem;
+    color: $iconColor;
+
 }
 
 .portfolioAboutContent {
@@ -107,7 +119,7 @@
   padding: 0;
   width: auto;
   margin: 0;
-  margin-bottom: 30px;
+
 }
 
 .portfolioContactButton {
@@ -126,10 +138,8 @@
   background-size: cover;
   position: relative;
   z-index: 1;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 2rem 0;
   text-align: center;
-  margin-bottom: 40px;
 
   li{
     &:first-child {
@@ -159,9 +169,21 @@
 //Skills Section------------------------
 
 .skills {
+  height: 522px;
+
+
+  ul {
+    height: inherit;
+  }
 
   li {
     position: relative;
+
+
+  p{
+    padding:0;
+    line-height: 100%;
+  }
   }
 }
 
@@ -215,6 +237,146 @@
 }
 
 .skillResp {
-  top:-623px;
-  left:60px;
+  top: -633px;
+  left: 155px;
+}
+
+.skillBS {
+  top: -441px;
+  left: 312px;
+}
+
+.skillAngular {
+  top: -648px;
+  left: 260px;
+}
+
+.skillUX {
+  top: -647px;
+  left: 312px;
+}
+
+.skillSketch {
+  top: -930px;
+  left: 262px;
+}
+
+.skillGit {
+  top: -928px;
+  left: 267px;
+}
+
+.skillJquery {
+  top: -768px;
+  left: 74px;
+}
+
+
+//Interest section ------------------------------------
+.interests {
+  @extend .skills;
+  height: 386px;
+  border: 1px solid #E5E5E5;
+  li {
+    background: $secondaryColor !important;
+  }
+}
+
+.intSF {
+
+}
+
+.intOutD {
+  left: 7px;
+  top: -1px;
+}
+.intFamily{
+  top: -157px;
+  left: 72px;
+}
+.intOpenS{
+  top: -156px;
+  left: 79px;
+}
+.intPakers {
+  top: -199px;
+  left: 258px;
+}
+.intCS {
+  top: -368px;
+  left: 265px;
+}
+.intFoodie {
+  top: -376px;
+  left: 311px;
+}
+.intGivingB {
+  top: -556px;
+  left: 186px;
+}
+.intStarWars {
+  top: -484px;
+  left: 25px;
+}
+.intlearning {
+  top: -620px;
+  left: 160px;
+}
+
+
+
+
+//SelectedWork Section -------------------------------------------------
+.Work {
+  border: 1px solid #E5E5E5;
+}
+.workPiece {
+  margin-bottom: 50px;
+
+  p {
+    color: $textColor;
+  }
+}
+
+
+.workBanner {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  height: 200px;
+  width: 80%;
+  box-shadow: 0 3px 6px rgba(0,0,0,.24);
+  margin: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#webhubBanner {
+  background: url("../img/Picture2.png");
+}
+#SLSLBanner {
+  background: url("../img/Picture2.png");
+}
+#blogBanner {
+  background: url("../img/blog.png");
+}
+#AnniversaryBanner {
+  background: url("../img/jr.png");
+}
+#SLCProcodeBanner {
+  background: url("../img/slcPC.png");
+}
+
+.workContent{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p{
+    font-size: .8rem;
+  }
 }
