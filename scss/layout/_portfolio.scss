@@ -56,6 +56,15 @@
 
 }
 
+section {
+  @media(max-width: 360px) {
+    h1 {
+      font-size: 3.7rem !important;
+    }
+  }
+
+}
+
 
 //about section --------------------------------
 
@@ -69,6 +78,28 @@
   height: 190px;
   position: relative;
   z-index: 1;
+
+  &::after,&::before {
+    content: "";
+    @extend .portfolioCirclePic;
+    border-radius: 100%;
+    background: $primaryColor;
+    opacity: 0.4;
+    position: absolute;
+    top: 0px;
+    z-index: 4;
+  }
+
+  &::before {
+    left:-86px
+  }
+
+  &::after {
+    right: -86px;
+    background-color: $iconColor;
+  }
+
+
 }
 
 .circleDiv {
@@ -172,6 +203,10 @@
 .skills {
   height: 522px;
 
+  @media(min-width:414px) {
+    height:555px;
+  }
+
 
   ul {
     height: inherit;
@@ -208,7 +243,7 @@
 .skillJavascript {
   top: -67px;
   left: 78px;
-
+  @include circleePosCalc(-67px,78px);
 
 }
 
@@ -244,7 +279,7 @@
 .skillDesign {
   top: -490px;
   left: 169px;
-  @include circleePosCalc(-490px,182px);
+  @include circleePosCalc(-490px,169px);
 }
 
 .skillResp {
@@ -294,6 +329,11 @@
 .interests {
   @extend .skills;
   height: 386px;
+
+  @media(min-width:414px) {
+    height:417px;
+  }
+
   border: 1px solid #E5E5E5;
   li {
     background: $secondaryColor !important;
@@ -311,38 +351,47 @@
 .intOutD {
   left: 7px;
   top: -1px;
+  @include circleePosCalc(7px,-1px);
 }
 .intFamily{
   top: -157px;
   left: 72px;
+  @include circleePosCalc(-157px,72px);
 }
 .intOpenS{
   top: -156px;
   left: 79px;
+  @include circleePosCalc(-156px,79px);
 }
 .intPakers {
   top: -199px;
   left: 258px;
+  @include circleePosCalc(-199px,258px);
 }
 .intCS {
   top: -368px;
   left: 265px;
+  @include circleePosCalc(-368px,265px);
 }
 .intFoodie {
   top: -376px;
   left: 311px;
+  @include circleePosCalc(-376px,311px);
 }
 .intGivingB {
   top: -556px;
   left: 186px;
+  @include circleePosCalc(-556px,186px);
 }
 .intStarWars {
   top: -484px;
   left: 25px;
+  @include circleePosCalc(-474px,25px);
 }
 .intlearning {
   top: -620px;
   left: 160px;
+  @include circleePosCalc(-620px,160px);
 }
 
 
@@ -439,6 +488,10 @@
   width:17%;
   margin: 5px;
   text-shadow: $level3;
+
+  @media (max-width: 360px) {
+    width:16%;
+  }
 }
 
 
@@ -455,6 +508,16 @@ footer{
   opacity: 0.4;
   float: left;
   margin-right: -35px;
+
+  @media(max-width: 340px) {
+    margin-right:-53px;
+  }
+
+
+
+  @media(min-width:414px) {
+    margin-right:-46px;
+  }
 
 }
 

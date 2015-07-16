@@ -64,6 +64,10 @@ $slideInOut: cubic-bezier(0.65,-0.55,0.265,1.55);
     opacity: .65;
     padding-top: 15px;
 
+    @media(max-width: 355px) {
+      @include circleSizeDec(60px,15px,.171875);
+    }
+
     @media(min-width:414px) {
       @include circleSizeCalc(60px,15px,1.104);
     }
@@ -75,6 +79,10 @@ $slideInOut: cubic-bezier(0.65,-0.55,0.265,1.55);
     opacity: .80;
     padding-top: 23px;
 
+    @media(max-width: 355px) {
+      @include circleSizeDec(80px,23px,.171875);
+    }
+
     @media(min-width:414px) {
       @include circleSizeCalc(80px,23px,1.104);
     }
@@ -84,6 +92,10 @@ $slideInOut: cubic-bezier(0.65,-0.55,0.265,1.55);
     height:110px;
     opacity: .99;
     padding-top: 40px;
+
+    @media(max-width: 355px) {
+      @include circleSizeDec(110px,40px,.171875);
+    }
 
     @media(min-width:414px) {
       @include circleSizeCalc(110px,40px,1.104);
@@ -100,16 +112,30 @@ $slideInOut: cubic-bezier(0.65,-0.55,0.265,1.55);
   }
 }
 
+//increases the size based on the % increase of the screnn width
 @mixin circleSizeCalc($s,$p,$m) {
   width: $s * $m;
   height: $s * $m;
   padding-top: $p * $m;
 }
 
+
+//increases the position based on the % increase of the screnn width
 @mixin circleePosCalc($t,$l) {
+  @media(max-width:355px) {
+    top:$t - ($t * .171875);
+    left:$l - ($l * .171875);
+  }
   @media(min-width:414px) {
     top: $t * 1.104;
     left: $l * 1.104;
   }
 
+}
+
+//decreases the size bases on the %diff of the screen widths
+@mixin circleSizeDec ($s,$p,$m) {
+  width: $s - ($s * $m);
+  height: $s - ($s * $m);
+  padding-top: $p - ($p * $m);
 }

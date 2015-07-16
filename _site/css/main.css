@@ -1389,11 +1389,28 @@ li {
   position: absolute;
   top: 70px; }
 
-.portfolioCirclePic, .circleDiv {
+@media (max-width: 360px) {
+  section h1 {
+    font-size: 3.7rem !important; } }
+
+.portfolioCirclePic, .portfolioCirclePic::after, .portfolioCirclePic::before, .circleDiv {
   width: 190px;
   height: 190px;
   position: relative;
   z-index: 1; }
+  .portfolioCirclePic::after, .circleDiv::after, .portfolioCirclePic::before, .circleDiv::before {
+    content: "";
+    border-radius: 100%;
+    background: #2196F3;
+    opacity: 0.4;
+    position: absolute;
+    top: 0px;
+    z-index: 4; }
+  .portfolioCirclePic::before, .circleDiv::before {
+    left: -86px; }
+  .portfolioCirclePic::after, .circleDiv::after {
+    right: -86px;
+    background-color: #212121; }
 
 .circleDiv {
   border-radius: 100%;
@@ -1475,6 +1492,9 @@ li {
 
 .skills, .interests {
   height: 522px; }
+  @media (min-width: 414px) {
+    .skills, .interests {
+      height: 555px; } }
   .skills ul, .interests ul {
     height: inherit; }
   .skills li, .interests li {
@@ -1495,6 +1515,11 @@ li {
   height: 60px;
   opacity: .65;
   padding-top: 15px; }
+  @media (max-width: 355px) {
+    .smallCircle {
+      width: 49.6875px;
+      height: 49.6875px;
+      padding-top: 12.42188px; } }
   @media (min-width: 414px) {
     .smallCircle {
       width: 66.24px;
@@ -1512,6 +1537,11 @@ li {
   height: 80px;
   opacity: .80;
   padding-top: 23px; }
+  @media (max-width: 355px) {
+    .MediumCircle {
+      width: 66.25px;
+      height: 66.25px;
+      padding-top: 19.04688px; } }
   @media (min-width: 414px) {
     .MediumCircle {
       width: 88.32px;
@@ -1529,6 +1559,11 @@ li {
   height: 110px;
   opacity: .99;
   padding-top: 40px; }
+  @media (max-width: 355px) {
+    .largeCircle {
+      width: 91.09375px;
+      height: 91.09375px;
+      padding-top: 33.125px; } }
   @media (min-width: 414px) {
     .largeCircle {
       width: 121.44px;
@@ -1538,10 +1573,22 @@ li {
 .skillJavascript {
   top: -67px;
   left: 78px; }
+  @media (max-width: 355px) {
+    .skillJavascript {
+      top: -55.48438px;
+      left: 64.59375px; } }
+  @media (min-width: 414px) {
+    .skillJavascript {
+      top: -73.968px;
+      left: 86.112px; } }
 
 .skillGulp {
   top: -109px;
   left: 23px; }
+  @media (max-width: 355px) {
+    .skillGulp {
+      top: -90.26563px;
+      left: 19.04688px; } }
   @media (min-width: 414px) {
     .skillGulp {
       top: -120.336px;
@@ -1549,6 +1596,10 @@ li {
 
 .skillExpress {
   top: -106px; }
+  @media (max-width: 355px) {
+    .skillExpress {
+      top: -87.78125px;
+      left: 0px; } }
   @media (min-width: 414px) {
     .skillExpress {
       top: -117.024px;
@@ -1557,6 +1608,10 @@ li {
 .skillCss {
   top: -189px;
   left: 66px; }
+  @media (max-width: 355px) {
+    .skillCss {
+      top: -156.51563px;
+      left: 54.65625px; } }
   @media (min-width: 414px) {
     .skillCss {
       top: -208.656px;
@@ -1564,6 +1619,10 @@ li {
 
 .skillSass {
   top: -278px; }
+  @media (max-width: 355px) {
+    .skillSass {
+      top: -230.21875px;
+      left: 0px; } }
   @media (min-width: 414px) {
     .skillSass {
       top: -306.912px;
@@ -1572,6 +1631,10 @@ li {
 .skillNode {
   top: -950px;
   left: 182px; }
+  @media (max-width: 355px) {
+    .skillNode {
+      top: -786.71875px;
+      left: 150.71875px; } }
   @media (min-width: 414px) {
     .skillNode {
       top: -1048.8px;
@@ -1580,14 +1643,22 @@ li {
 .skillDesign {
   top: -490px;
   left: 169px; }
+  @media (max-width: 355px) {
+    .skillDesign {
+      top: -405.78125px;
+      left: 139.95313px; } }
   @media (min-width: 414px) {
     .skillDesign {
       top: -540.96px;
-      left: 200.928px; } }
+      left: 186.576px; } }
 
 .skillResp {
   top: -633px;
   left: 155px; }
+  @media (max-width: 355px) {
+    .skillResp {
+      top: -524.20313px;
+      left: 128.35938px; } }
   @media (min-width: 414px) {
     .skillResp {
       top: -698.832px;
@@ -1596,6 +1667,10 @@ li {
 .skillBS {
   top: -441px;
   left: 312px; }
+  @media (max-width: 355px) {
+    .skillBS {
+      top: -365.20313px;
+      left: 258.375px; } }
   @media (min-width: 414px) {
     .skillBS {
       top: -486.864px;
@@ -1604,6 +1679,10 @@ li {
 .skillAngular {
   top: -648px;
   left: 260px; }
+  @media (max-width: 355px) {
+    .skillAngular {
+      top: -536.625px;
+      left: 215.3125px; } }
   @media (min-width: 414px) {
     .skillAngular {
       top: -715.392px;
@@ -1612,6 +1691,10 @@ li {
 .skillUX {
   top: -647px;
   left: 312px; }
+  @media (max-width: 355px) {
+    .skillUX {
+      top: -535.79688px;
+      left: 258.375px; } }
   @media (min-width: 414px) {
     .skillUX {
       top: -714.288px;
@@ -1620,6 +1703,10 @@ li {
 .skillSketch {
   top: -930px;
   left: 262px; }
+  @media (max-width: 355px) {
+    .skillSketch {
+      top: -770.15625px;
+      left: 216.96875px; } }
   @media (min-width: 414px) {
     .skillSketch {
       top: -1026.72px;
@@ -1628,6 +1715,10 @@ li {
 .skillGit {
   top: -928px;
   left: 267px; }
+  @media (max-width: 355px) {
+    .skillGit {
+      top: -768.5px;
+      left: 221.10938px; } }
   @media (min-width: 414px) {
     .skillGit {
       top: -1024.512px;
@@ -1636,6 +1727,10 @@ li {
 .skillJquery {
   top: -768px;
   left: 74px; }
+  @media (max-width: 355px) {
+    .skillJquery {
+      top: -636px;
+      left: 61.28125px; } }
   @media (min-width: 414px) {
     .skillJquery {
       top: -847.872px;
@@ -1644,6 +1739,9 @@ li {
 .interests {
   height: 386px;
   border: 1px solid #E5E5E5; }
+  @media (min-width: 414px) {
+    .interests {
+      height: 417px; } }
   .interests li {
     background: #2ecc71 !important; }
     .interests li p {
@@ -1652,38 +1750,110 @@ li {
 .intOutD {
   left: 7px;
   top: -1px; }
+  @media (max-width: 355px) {
+    .intOutD {
+      top: 5.79688px;
+      left: -0.82813px; } }
+  @media (min-width: 414px) {
+    .intOutD {
+      top: 7.728px;
+      left: -1.104px; } }
 
 .intFamily {
   top: -157px;
   left: 72px; }
+  @media (max-width: 355px) {
+    .intFamily {
+      top: -130.01563px;
+      left: 59.625px; } }
+  @media (min-width: 414px) {
+    .intFamily {
+      top: -173.328px;
+      left: 79.488px; } }
 
 .intOpenS {
   top: -156px;
   left: 79px; }
+  @media (max-width: 355px) {
+    .intOpenS {
+      top: -129.1875px;
+      left: 65.42188px; } }
+  @media (min-width: 414px) {
+    .intOpenS {
+      top: -172.224px;
+      left: 87.216px; } }
 
 .intPakers {
   top: -199px;
   left: 258px; }
+  @media (max-width: 355px) {
+    .intPakers {
+      top: -164.79688px;
+      left: 213.65625px; } }
+  @media (min-width: 414px) {
+    .intPakers {
+      top: -219.696px;
+      left: 284.832px; } }
 
 .intCS {
   top: -368px;
   left: 265px; }
+  @media (max-width: 355px) {
+    .intCS {
+      top: -304.75px;
+      left: 219.45313px; } }
+  @media (min-width: 414px) {
+    .intCS {
+      top: -406.272px;
+      left: 292.56px; } }
 
 .intFoodie {
   top: -376px;
   left: 311px; }
+  @media (max-width: 355px) {
+    .intFoodie {
+      top: -311.375px;
+      left: 257.54688px; } }
+  @media (min-width: 414px) {
+    .intFoodie {
+      top: -415.104px;
+      left: 343.344px; } }
 
 .intGivingB {
   top: -556px;
   left: 186px; }
+  @media (max-width: 355px) {
+    .intGivingB {
+      top: -460.4375px;
+      left: 154.03125px; } }
+  @media (min-width: 414px) {
+    .intGivingB {
+      top: -613.824px;
+      left: 205.344px; } }
 
 .intStarWars {
   top: -484px;
   left: 25px; }
+  @media (max-width: 355px) {
+    .intStarWars {
+      top: -392.53125px;
+      left: 20.70313px; } }
+  @media (min-width: 414px) {
+    .intStarWars {
+      top: -523.296px;
+      left: 27.6px; } }
 
 .intlearning {
   top: -620px;
   left: 160px; }
+  @media (max-width: 355px) {
+    .intlearning {
+      top: -513.4375px;
+      left: 132.5px; } }
+  @media (min-width: 414px) {
+    .intlearning {
+      top: -684.48px;
+      left: 176.64px; } }
 
 .workPiece {
   margin-bottom: 80px; }
@@ -1749,6 +1919,9 @@ li {
   width: 17%;
   margin: 5px;
   text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23); }
+  @media (max-width: 360px) {
+    .portfolioSocial {
+      width: 16%; } }
 
 footer {
   overflow: hidden;
@@ -1762,6 +1935,12 @@ footer {
   opacity: 0.4;
   float: left;
   margin-right: -35px; }
+  @media (max-width: 340px) {
+    .footerCircleDiv {
+      margin-right: -53px; } }
+  @media (min-width: 414px) {
+    .footerCircleDiv {
+      margin-right: -46px; } }
 
 .greyCircle {
   background-color: #212121; }
