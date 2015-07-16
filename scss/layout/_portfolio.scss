@@ -102,14 +102,14 @@
   margin-bottom: 40px;
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 2.9rem;
   }
 
 
 }
 
 #filterAboutSub {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: $iconColor;
 
 }
@@ -119,11 +119,12 @@
   padding: 0;
   width: auto;
   margin: 0;
+  margin-bottom: 20px;
 
 }
 
 .portfolioContactButton {
-  @include mainButton(white,$primaryColor);
+  @include mainButton(white,$textColor);
   margin-bottom: 40px;
 }
 
@@ -183,6 +184,7 @@
   p{
     padding:0;
     line-height: 100%;
+    font-weight: 100;
   }
   }
 }
@@ -279,6 +281,10 @@
   border: 1px solid #E5E5E5;
   li {
     background: $secondaryColor !important;
+
+    p{
+      font-weight: 100;
+    }
   }
 }
 
@@ -328,10 +334,10 @@
 
 //SelectedWork Section -------------------------------------------------
 .Work {
-  border: 1px solid #E5E5E5;
+
 }
 .workPiece {
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 
   p {
     color: $textColor;
@@ -352,7 +358,7 @@
 }
 
 #webhubBanner {
-  background: url("../img/Picture2.png");
+  background: url("../img/webhub.png");
 }
 #SLSLBanner {
   background: url("../img/Picture2.png");
@@ -379,4 +385,63 @@
   p{
     font-size: .8rem;
   }
+}
+
+
+
+//contact section --------------------------------
+
+.getInTouch {
+  background: linear-gradient(
+  rgba(255,255,255,0.4),rgba(255,255,255,1)
+  ), url('../img/poly3.jpg');
+  background-size: cover;
+  background-position: center;
+
+  h1{
+    text-align: center;
+  }
+  p{
+    color: $primaryColor;
+    text-align: center;
+    opacity: 0.7;
+  }
+
+}
+
+.portfolioSocialIcon {
+  color: $textColor;
+
+}
+
+.iconWrapper {
+  @include clearFix;
+}
+
+.portfolioSocial {
+  float:left;
+  width:17%;
+  margin: 5px;
+  text-shadow: $level3;
+}
+
+
+//footer -------------------------
+footer{
+  overflow: hidden;
+  height: 67px;
+}
+.footerCircleDiv {
+  height: 120px;
+  width: 120px;
+  border-radius: 100%;
+  background: $primaryColor;
+  opacity: 0.4;
+  float: left;
+  margin-right: -35px;
+
+}
+
+.greyCircle {
+  background-color:$iconColor;
 }

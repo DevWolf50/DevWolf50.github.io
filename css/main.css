@@ -365,7 +365,7 @@ html, body {
 
 body {
   font-size: 1em;
-  font-family: "Droid Serif", serif;
+  font-family: "Lato", serif;
   color: #fff; }
 
 h1 {
@@ -376,8 +376,11 @@ h1 {
 
 h2 {
   font-size: .8rem;
-  font-weight: normal;
+  font-weight: 400;
   margin: 0; }
+
+h3 {
+  font-weight: 300; }
 
 a {
   text-decoration: none;
@@ -1417,38 +1420,38 @@ li {
   border: none;
   margin-bottom: 40px; }
   .portfolioFilterAbout h2 {
-    font-size: 1.5rem; }
+    font-size: 2.9rem; }
 
 #filterAboutSub {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #212121; }
 
 .portfolioAboutContent {
   box-shadow: none;
   padding: 0;
   width: auto;
-  margin: 0; }
+  margin: 0;
+  margin-bottom: 20px; }
 
 .portfolioContactButton {
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.13), 0px 3px 6px rgba(0, 0, 0, 0.23);
   background: white;
-  color: #2196F3;
-  border: 3px solid #2196F3;
+  color: #4a4a4a;
+  border: 3px solid #4a4a4a;
   text-align: center;
   width: 30%;
   margin: auto;
   margin-bottom: 40px; }
   .portfolioContactButton h1 {
-    color: #2196F3;
+    color: #4a4a4a;
     margin: 7px; }
   .portfolioContactButton h2 {
-    color: #2196F3;
+    color: #4a4a4a;
     margin: 7px; }
   .portfolioContactButton h3 {
-    color: #2196F3;
+    color: #4a4a4a;
     margin: 7px; }
   .portfolioContactButton p {
-    color: #2196F3;
+    color: #4a4a4a;
     margin: 7px; }
 
 .reviewsBackground {
@@ -1478,7 +1481,8 @@ li {
     position: relative; }
     .skills li p, .interests li p {
       padding: 0;
-      line-height: 100%; }
+      line-height: 100%;
+      font-weight: 100; }
 
 .smallCircle {
   border-radius: 100%;
@@ -1575,6 +1579,8 @@ li {
   border: 1px solid #E5E5E5; }
   .interests li {
     background: #2ecc71 !important; }
+    .interests li p {
+      font-weight: 100; }
 
 .intOutD {
   left: 7px;
@@ -1612,11 +1618,8 @@ li {
   top: -620px;
   left: 160px; }
 
-.Work {
-  border: 1px solid #E5E5E5; }
-
 .workPiece {
-  margin-bottom: 50px; }
+  margin-bottom: 80px; }
   .workPiece p {
     color: #4a4a4a; }
 
@@ -1632,7 +1635,7 @@ li {
   margin-bottom: 10px; }
 
 #webhubBanner {
-  background: url("../img/Picture2.png"); }
+  background: url("../img/webhub.png"); }
 
 #SLSLBanner {
   background: url("../img/Picture2.png"); }
@@ -1654,6 +1657,47 @@ li {
     font-size: 1.5rem; }
   .workContent p {
     font-size: .8rem; }
+
+.getInTouch {
+  background: linear-gradient(rgba(255, 255, 255, 0.4), white), url("../img/poly3.jpg");
+  background-size: cover;
+  background-position: center; }
+  .getInTouch h1 {
+    text-align: center; }
+  .getInTouch p {
+    color: #2196F3;
+    text-align: center;
+    opacity: 0.7; }
+
+.portfolioSocialIcon {
+  color: #4a4a4a; }
+
+.iconWrapper::after, .iconWrapper::before {
+  content: "";
+  clear: both;
+  display: table; }
+
+.portfolioSocial {
+  float: left;
+  width: 17%;
+  margin: 5px;
+  text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23); }
+
+footer {
+  overflow: hidden;
+  height: 67px; }
+
+.footerCircleDiv {
+  height: 120px;
+  width: 120px;
+  border-radius: 100%;
+  background: #2196F3;
+  opacity: 0.4;
+  float: left;
+  margin-right: -35px; }
+
+.greyCircle {
+  background-color: #212121; }
 
 .footer {
   background: #fff;

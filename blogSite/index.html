@@ -1,0 +1,20 @@
+---
+layout: default
+title: My home page
+---
+
+{% for post in site.posts limit:3 %}
+<div class="entry">
+    <a href="{{post.url}}" rel="bookmark">
+    <div class ="wrapperStyle" style="background-image: url(../{{post.image}})"></div>
+    <h1 class="entryTitle">
+        {{post.title}}
+
+    </h1>
+        <p class="postDate">{{post.date | date: "%d %b %Y"}}</p>
+    <p>{{post.content}}</p>
+    </a>
+</div>
+
+
+{% endfor %}

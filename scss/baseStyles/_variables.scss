@@ -8,7 +8,7 @@ $secondaryColor: #2ecc71; //emerald
 
 //fonts
 $headingFont: 'Josefin Sans', sans-serif;
-$bodyFont: 'Droid Serif', serif;
+$bodyFont: 'Lato', serif;
 
 
 //box shadows
@@ -25,7 +25,6 @@ $slideInOut: cubic-bezier(0.65,-0.55,0.265,1.55);
 //mixins---------------------------------
 
 @mixin mainButton($firstColor,$secondColor) {
-  box-shadow: $level2;
   background: $firstColor;
   color: $secondColor;
   border: 3px solid $secondColor;
@@ -78,4 +77,12 @@ $slideInOut: cubic-bezier(0.65,-0.55,0.265,1.55);
     padding-top: 40px;
   }
 
+}
+
+@mixin clearFix {
+  &::after, &::before {
+    content: "";
+    clear: both;
+    display: table;
+  }
 }

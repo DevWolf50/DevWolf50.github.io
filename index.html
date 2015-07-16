@@ -1,20 +1,235 @@
----
-layout: default
-title: My home page
----
+<!DOCTYPE html>
+<html>
 
-{% for post in site.posts limit:3 %}
-<div class="entry">
-    <a href="{{post.url}}" rel="bookmark">
-    <div class ="wrapperStyle" style="background-image: url(../{{post.image}})"></div>
-    <h1 class="entryTitle">
-        {{post.title}}
+    <head>
+        <meta charset="utf-8">
+        <title>Joe Pal's Portfolio</title>
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="{{site.description}}">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700|Josefin+Sans:300,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="icons/style.css">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Im JoePal</title>
 
-    </h1>
-        <p class="postDate">{{post.date | date: "%d %b %Y"}}</p>
-    <p>{{post.content}}</p>
-    </a>
-</div>
+    </head>
+
+    <body>
+      <div class="portfolio">
+      <!--Banner-->
+      <div class = "whiteWrapper">
+        <div class="portfolioHeader">
+          &nbsp;
+        </div>
+    </div>
+    <div class="portfolioHeaderHeading fadeIn">
+      <h1> <span class="singleChar">Jo</span>s<span class="singleChar">e</span>ph <span class="singleChar">Pal</span>omino </h1>
+      <h3> Independent FullStack Web Developer </h3>
+    </div>
+
+      <!--About Me Section -->
+      <section class = "portfolioAboutSection">
+        <div class="aboutHeader portfoilioAboutHeader">
+            <div class="circlePic portfolioCirclePic">&nbsp;</div>
+            <div class="circleDiv circleDivLeft">&nbsp;</div>
+            <div class="circleDiv circleDivRight">&nbsp;</div>
+
+        </div>
+
+        <div class="filter about portfolioFilterAbout delayFadeIn">
+            <h2>Hi, I'm Joseph.</h2>
+            <h2 id="filterAboutSub">Let's <span class="singleChar">change</span> the world <span class="singleChar">together</span>.</h2>
+        </div>
+
+        <div class ="aboutContent portfolioAboutContent">
+            <p>I am a full stack web developer and designer. I have a knack for solving problems and for creating solutions that are beautiful inside and out. I enthusiastically come to the table with a passion for web development, dedication to learning, and grit to become the best. Most recently I've started freelancing. Before that, I was a data analyst for a marketing agency. I'm trying to build an immersive experience for people to learn how to program in Salt Lake City.
+              <br><br>I'm inspired by awesome people, material design, and nature. I believe animations and interactivity are the future of the web. At the end of the day, all I care about is trying to create experiences and products that will make people's lives just a little better. </p>
+
+        </div>
+        <a href="mailto:joe.palomino50@gmail.com?Subject=Lets%20Change%20The%20World">
+            <div class="portfolioContactButton">
+              <h3>Contact</h3>
+            </div>
+          </a>
 
 
-{% endfor %}
+        <div class="reviews">
+            <div class="reviewsBackground group">
+              <ul>
+                <li>
+                  <h2>"We can't thank Joe enough for his passion for web design and development"</h2>
+                  <h3>-Mark Shyved</h3>
+                  <p>saltlakeswimleague.com</p>
+
+                </li>
+                <li>
+                  <h2>"Such an awesome website!"</h2>
+                  <h3>-Megan Hanson</h3>
+                  <p>josephandregina.com</p>
+                </li>
+              </ul>
+          </div>
+
+
+        </div>
+
+      </section>
+
+      <!--Skills Section -->
+      <section class="skills">
+        <header>
+          <h1><span class="singleChar">S</span>kills</h1>
+        </header>
+        <ul class="">
+          <li class="MediumCircle skillHtml"> <p>HTML</p> </li>
+          <li class="largeCircle skillJavascript"> <p>Javascipt</p> </li>
+            <li class="smallCircle skillGulp"> <p>Gulp</p> </li>
+            <li class="smallCircle skillExpress"> <p>Ex press</p> </li>
+          <li class="largeCircle skillCss"> <p>CSS</p> </li>
+            <li class="smallCircle skillBS"> <p>Boot strap</p> </li>
+          <li class="MediumCircle skillSass"> <p>Sass</p> </li>
+          <li class="largeCircle skillDesign"> <p>Design</p> </li>
+          <li class="MediumCircle skillAngular"> <p>Angular</p> </li>
+          <li class="smallCircle skillUX"> <p>UX</p> </li>
+          <li class="largeCircle skillResp"> <p>Responsive</p> </li>
+          <li class="MediumCircle skillNode"> <p>Node</p> </li>
+          <li class="MediumCircle skillJquery"> <p>JQuery</p> </li>
+          <li class="MediumCircle skillSketch"> <p>Sketch 3</p> </li>
+          <li class="MediumCircle skillGit"> <p>Git</p> </li>
+        </ul>
+      </section>
+
+      <!--Interests Section -->
+      <section class="interests">
+        <header>
+          <h1><span class="singleChar">I</span>nterests</h1>
+        </header>
+        <ul>
+          <li class="smallCircle intSF"> <p>SF Giants</p> </li>
+          <li class="MediumCircle intOutD"> <p>Out Doors</p> </li>
+          <li class="largeCircle intFamily"> <p>Family</p> </li>
+          <li class="MediumCircle intOpenS"> <p>Open Source</p> </li>
+          <li class="smallCircle intPakers"> <p>Packers</p> </li>
+          <li class="MediumCircle intCS"> <p>CS</p> </li>
+          <li class="smallCircle intFoodie"> <p>Foodie</p> </li>
+          <li class="MediumCircle intGivingB"> <p>Giving Back</p> </li>
+          <li class="smallCircle intStarWars"> <p>Star Wars</p> </li>
+          <li class="largeCircle intlearning"> <p>Learning</p> </li>
+        </ul>
+      </section>
+
+      <!--Work Section -->
+      <section class="Work">
+        <header>
+          <h1><span class="singleChar">S</span>elected <span class="singleChar">W</span>ork</h1>
+        </header>
+        <ul>
+          <li class="workPiece">
+            <div id="webhubBanner" class="workBanner">
+              &nbsp;
+            </div>
+            <div class="workContent">
+              <h2>WebHub</h2>
+              <p>Branding,Site Design,Site Development</p>
+            </div>
+          </li>
+
+          <li class="workPiece">
+            <div id="SLSLBanner" class="workBanner">
+              &nbsp;
+            </div>
+            <div class="workContent">
+              <h2>Salt Lake Swim League</h2>
+              <p>Branding,Site Design,Site Development</p>
+              <a href="">
+
+              </a>
+            </div>
+          </li>
+
+          <li class="workPiece">
+            <div id="blogBanner" class="workBanner">
+              &nbsp;
+            </div>
+            <div class="workContent">
+              <h2>Personal Blog</h2>
+              <p>Branding,Site Design,Site Development, Content Managment</p>
+              <a href="">
+
+              </a>
+            </div>
+          </li>
+
+          <li class="workPiece">
+            <div id="AnniversaryBanner" class="workBanner">
+              &nbsp;
+            </div>
+            <div class="workContent">
+              <h2>Anniversary Website</h2>
+              <p>Branding,Site Design,Site Development</p>
+              <a href="">
+
+              </a>
+            </div>
+          </li>
+
+          <li class="workPiece">
+            <div id="SLCProcodeBanner" class="workBanner">
+              &nbsp;
+            </div>
+            <div class="workContent">
+              <h2>SLC ProCode</h2>
+              <p>Branding,Site Design,Site Development</p>
+              <a href="">
+
+              </a>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+
+      <!--Get in touch Section-->
+      <section class="getInTouch">
+          <header>
+            <h1>Get in Touch </h1>
+          </header>
+          <div class="iconWrapper">
+            <p>Lets change the world together</p>
+            <div class="portfolioSocial  ">
+              <a href="https://twitter.com/Joe_Pal50"><span class="icon-twitter portfolioSocialIcon"></span></a>
+            </div>
+            <div class="portfolioSocial  ">
+              <a href="https://www.facebook.com/joepal50"><span class="icon-facebook portfolioSocialIcon"></span></a>
+            </div>
+            <div class="portfolioSocial  ">
+              <a href="https://github.com/DevWolf50"><span class="icon-github2 portfolioSocialIcon"></span></a>
+            </div>
+            <div class="portfolioSocial  ">
+              <a href="http://codepen.io/DevWolf/"><span class="icon-pencil portfolioSocialIcon"></span></a>
+            </div>
+            <div class="portfolioSocial  ">
+              <a href="mailto:joe.palomino50@gmail.com?Subject=Lets%20Change%20The%20World"><span class="icon-ruby portfolioSocialIcon"></span></a>
+            </div>
+          </div>
+      </section>
+
+      <footer>
+        <div class="footerCircleDiv">&nbsp;</div>
+        <div class="footerCircleDiv greyCircle">&nbsp;</div>
+        <div class="footerCircleDiv">&nbsp;</div>
+        <div class="footerCircleDiv greyCircle">&nbsp;</div>
+        <p>Joseph Palomino &copy; 2015</p>
+      </footer>
+
+
+
+
+
+
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+         <script src="js/app.js"></script>
+       </div>
+
+    </body>
+
+</html>
