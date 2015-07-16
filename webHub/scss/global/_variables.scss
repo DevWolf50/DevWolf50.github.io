@@ -1,0 +1,90 @@
+
+
+//variables------------------------------
+$primaryColor:rgba(50, 65, 82, 1); //dark gray
+$secondaryColor: rgba(193, 131, 106, 1); //baige
+$accentColor:#47535E; //medium gray
+$secondaryAccentColor: #796466; //mix between grey and baige
+$headerColor:#DEA677; //yellow
+$backgroundColor: #efecec; //really light gray
+$gradientColor1:rgba(50, 65, 82, .65);
+$gradientColor2:rgba(193, 131, 106, 1);
+$headerPicture: "cloudy-stars.jpg";
+
+//fonts-----------------------------------
+$Lato:'Lato', sans-serif;
+
+
+//mixins---------------------------------
+@mixin gradient($colorOne,$colorTwo,$image) {
+  background:
+    linear-gradient(
+      to bottom right,
+      $colorOne,$colorTwo
+    ),
+    url("../img/" + $image)
+}
+
+@mixin backImg {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin boxShadow($value) {
+  @if $value == 1 {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }@else if $value == 2 {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }@else if $value == 3 {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }@else if $value == 4 {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }@else if $value == 5 {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  }
+}
+
+
+//buttons
+@mixin mainButton($color,$bkColor,$brColor){
+  @include boxShadow(1);
+  color:$color;
+  background: $bkColor;
+  border: 2px solid $brColor;
+
+}
+
+//clear browser styles for inputs---------------------------------------
+
+@mixin clearStyles {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  box-shadow: none !important;
+}
+
+//round picture -----------------------------------------
+
+@mixin roundPicture($w,$h) {
+  border-radius: 100%;
+  @include boxShadow(2);
+  width: $w;
+  height: $h;
+  background-size: cover;
+  position: absolute;
+}
+
+//inputs
+@mixin mainInput {
+  display: block;
+  margin: 10px 10px;
+  @include clearStyles;
+  background: $primaryColor;
+  border-bottom: 1px solid $accentColor;
+  color: $secondaryAccentColor;
+  width: 200px;
+}

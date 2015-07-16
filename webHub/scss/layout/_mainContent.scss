@@ -1,0 +1,342 @@
+.contentCards {
+
+}
+
+.contentCard {
+  background: $primaryColor;
+  width: 85%;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+
+  h1 {
+    color: $headerColor;
+    text-align: center;
+  }
+
+  h3 {
+    color: $secondaryAccentColor;
+
+  }
+
+  p{
+    color: $accentColor;
+    margin-top: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: left;
+    line-height: 1.3;
+  }
+
+  -webkit-transition: height 1s ease-in;
+
+}
+
+.cardContent {
+  min-height: 161px;
+}
+
+.contentImage {
+  height: 162px;
+  background-size:cover;
+  background-position-y: -37px;
+}
+
+.contentBottom {
+  background: $secondaryAccentColor;
+
+  h3{
+    color: $headerColor;
+    text-align: left;
+    margin-top: 10px;
+  }
+
+
+}
+
+.lastBotStat {
+
+  h3 {
+      text-align: right;
+  }
+
+}
+
+.imageWrapper {
+  background: $primaryColor;
+  opacity: .5;
+}
+
+
+
+
+
+
+//pannels html styles------------------------------------
+
+.learnMoreButton {
+  @include mainButton($headerColor,$accentColor,$headerColor);
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  h3 {
+    color: $headerColor;
+  }
+
+}
+
+
+
+.navPannel {
+
+  svg {
+    width:70px;
+  }
+}
+
+.active {
+  h3{
+    color: $secondaryColor;
+  }
+
+  svg {
+    fill: $secondaryColor;
+  }
+}
+
+
+
+
+//Resources section -------------------------------------
+
+.descriptionDiv {
+  p {
+    color: $secondaryAccentColor;
+  }
+}
+
+
+
+
+
+//Resources section -------------------------------------
+
+.resourceButton {
+  @include mainButton($accentColor,$primaryColor,$accentColor);
+  margin:5px;
+
+  &:hover {
+    border-color: $secondaryAccentColor;
+  }
+}
+
+.resourceSubHeader {
+  text-align: left;
+  font-size: 1.6rem;
+
+}
+
+#levelUp {
+  color: $secondaryAccentColor;
+}
+
+.trainingDiv {
+  @include mainButton($accentColor,$primaryColor,$accentColor);
+  margin:10px;
+  min-width:90px;
+
+  &:hover {
+    border-color: $secondaryAccentColor;
+  }
+
+  p{
+    text-align: center;
+  }
+
+  svg{
+    width: 30px;
+    fill:$accentColor;
+    margin-right: 10px;
+
+  }
+}
+
+.tail {
+  fill: $headerColor;
+}
+
+
+
+
+
+//review section -----------------------------------------------
+
+.review {
+  @extend .trainingDiv;
+}
+
+.reviewForm{
+  margin-top: 20px;
+
+  h3{
+    margin:10px;
+  }
+  select {
+    @include clearStyles;
+    @include mainButton($secondaryAccentColor,$primaryColor,$secondaryAccentColor);
+    width: 15%;
+    margin:10px 10px 10px 0;
+
+  }
+
+  input[type=email] {
+    display: block;
+    margin: 10px 10px;
+    @include clearStyles;
+    background: $primaryColor;
+    border-bottom: 1px solid $accentColor;
+    color: $secondaryAccentColor;
+    width: 200px;
+
+  }
+  -webkit-input-placeholder: {
+    color: $secondaryAccentColor;
+  }
+
+  textarea {
+    @extend input[type=email];
+    height: 25px;
+    width: 292px;
+  }
+  input[type=submit] {
+    @extend input[type=email];
+    @include mainButton ($headerColor,$accentColor,$headerColor);
+    width: 100px;
+
+  }
+
+}
+
+
+
+
+
+//pofile section ----------------------------------------------
+
+
+
+.profilePic {
+  @include roundPicture(70px,70px);
+  left: 80%;
+  top: 394px;
+  z-index: 5;
+}
+
+.profilePage {
+  border-radius: 5px;
+  width:85%;
+  height:660px;
+  @include boxShadow(3);
+  overflow: hidden;
+  background-color: rgba(50, 65, 82, .97);
+  border: 1px solid $secondaryAccentColor;
+  margin: auto;
+  right: 10%;
+  position: absolute;
+  z-index: 2;
+  -webkit-transition: all 0.5s cubic-bezier(0.68,-0.55,0.265,1.55);
+  transition: all 0.5s cubic-bezier(0.68,-0.55,0.265,1.55);
+
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: $secondaryColor;
+    font-weight: 400;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    color: $secondaryAccentColor;
+    font-weight: 300;
+  }
+
+  h3 {
+    text-align: center;
+    color: $accentColor;
+    opacity: 1;
+  }
+}
+
+.userInfo {
+  margin-bottom: 30px;
+
+  svg {
+    fill:$accentColor;
+    width: 70px;
+    display: block;
+    margin:auto;
+
+    &:hover {
+      fill: $secondaryAccentColor;
+    }
+
+  }
+  h3 {
+    margin-top: -26px;
+  }
+}
+
+.userLikesDiv {
+  h1{
+    text-align: left;
+  }
+  h2 {
+    text-align: left;
+  }
+  h3 {
+    text-align: left;
+  }
+
+  ul {
+    margin-top: 5px;
+  }
+
+}
+
+
+.profilePage.ng-hide {
+  width:0%;
+  height: 0;
+  -webkit-transition: all 0.5s cubic-bezier(0.68,-0.55,0.265,1.55);
+  transition: all 0.5s cubic-bezier(0.68,-0.55,0.265,1.55);
+
+}
+
+.userPicture {
+  @include roundPicture(150px,150px);
+  position: relative;
+  margin:auto;
+  margin-top: 75px;
+  margin-bottom: 10px;
+
+}
+
+.recentLikePic {
+  @include roundPicture(40px,40px);
+  position: relative;
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+
+
+//edit profile section
+
+.profileEdit {
+  background: $primaryColor;
+  input {
+    @include mainInput;
+  }
+
+}

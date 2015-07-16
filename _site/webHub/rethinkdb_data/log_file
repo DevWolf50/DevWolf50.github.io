@@ -1,0 +1,20 @@
+2015-06-15T20:19:15.655594000 0.637538s notice: Recursively removing directory /Users/ALegendaryWolf/Documents/WebHub/webHub/rethinkdb_data/tmp
+2015-06-15T20:19:15.657804000 0.639754s notice: Initializing directory /Users/ALegendaryWolf/Documents/WebHub/webHub/rethinkdb_data
+2015-06-15T20:19:15.657981000 0.639924s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/ALegendaryWolf/Documents/WebHub/webHub/rethinkdb_data' did not already exist or is empty.)
+2015-06-15T20:19:15.658057000 0.640001s notice: Running rethinkdb 2.0.3 (CLANG 4.2 (clang-425.0.28))...
+2015-06-15T20:19:15.664390000 0.646334s notice: Running on Darwin 14.3.0 x86_64
+2015-06-15T20:19:15.664458000 0.646401s notice: Loading data from directory /Users/ALegendaryWolf/Documents/WebHub/webHub/rethinkdb_data
+2015-06-15T20:19:20.120268000 5.102443s info: Automatically using cache size of 100 MB
+2015-06-15T20:19:20.120280000 5.102455s warn: Cache size does not leave much memory for server and query overhead (available memory: 420 MB).
+2015-06-15T20:19:20.120288000 5.102463s warn: Cache size is very low and may impact performance.
+2015-06-15T20:19:20.170572000 5.152749s notice: Listening for intracluster connections on port 29015
+2015-06-15T20:19:20.179956000 5.162131s notice: Listening for client driver connections on port 28015
+2015-06-15T20:19:20.180113000 5.162288s notice: Listening for administrative HTTP connections on port 8080
+2015-06-15T20:19:20.180129000 5.162305s notice: Listening on addresses: 127.0.0.1, ::1
+2015-06-15T20:19:20.180137000 5.162313s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2015-06-15T20:19:20.180148000 5.162323s notice: Server ready, "Palominos_MacBook_Pro_local_70s" 795fbe97-766a-4523-99f0-326229928afe
+2015-06-15T20:31:56.478501000 761.502497s notice: Server got SIGINT from pid 1000, uid 502; shutting down...
+2015-06-15T20:31:56.478724000 761.502719s notice: Shutting down client connections...
+2015-06-15T20:31:56.478993000 761.502989s notice: All client connections closed.
+2015-06-15T20:31:56.479013000 761.503009s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2015-06-15T20:31:56.484645000 761.508641s notice: Storage engine shut down.

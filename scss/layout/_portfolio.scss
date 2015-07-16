@@ -208,69 +208,85 @@
 .skillJavascript {
   top: -67px;
   left: 78px;
+
+
 }
 
 .skillGulp {
   top: -109px;
   left: 23px;
+
+  @include circleePosCalc(-109px,23px);
 }
 
 .skillExpress {
   top:-106px;
+  @include circleePosCalc(-106px,0px);
 }
 
 .skillCss {
   top: -189px;
   left: 66px;
+  @include circleePosCalc(-189px,66px);
 }
 
 .skillSass {
   top:-278px;
+  @include circleePosCalc(-278px,0px);
 }
 
 .skillNode {
   top: -950px;
   left: 182px;
+  @include circleePosCalc(-950px,182px);
 }
 
 .skillDesign {
   top: -490px;
   left: 169px;
+  @include circleePosCalc(-490px,182px);
 }
 
 .skillResp {
   top: -633px;
   left: 155px;
+  @include circleePosCalc(-633px,155px);
 }
 
 .skillBS {
   top: -441px;
   left: 312px;
+  @include circleePosCalc(-441px,312px);
 }
 
 .skillAngular {
   top: -648px;
   left: 260px;
+  @include circleePosCalc(-648px,260px);
 }
 
 .skillUX {
   top: -647px;
   left: 312px;
+  @include circleePosCalc(-647px,312px);
 }
 
 .skillSketch {
   top: -930px;
   left: 262px;
+  @include circleePosCalc(-930px,262px);
 }
 
 .skillGit {
   top: -928px;
   left: 267px;
+  @include circleePosCalc(-928px,267px);
 }
 
 .skillJquery {
   top: -768px;
   left: 74px;
+  @include circleePosCalc(-768px,74px);
 }
 
 

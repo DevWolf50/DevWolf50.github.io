@@ -1,0 +1,22 @@
+.footer {
+  height:100px;
+  background: $secondaryColor;
+  margin-top: 70px;
+
+  p{
+    color: $accentColor;
+    text-align: center;
+    margin-top: -17px;
+  }
+
+  svg{
+    width: 70px;
+    display: block;
+    margin: auto;
+    fill:$accentColor;
+
+    &:hover {
+      fill: $secondaryAccentColor;
+    }
+  }
+}

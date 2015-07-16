@@ -1,0 +1,23 @@
+
+    <div clas="loginDiv>"
+    <ul class='navButtons'>
+      <li><h3><a href="" ng-click="loginClicked(1)">Login</a></h3></li>
+    </ul>
+    <ul ng-show="loginTrue ===1">
+      <h3>login with </h3>
+      <li><h3>Twitter</h3></li>
+      <li><h3>Google</h3></li>
+      <li><h3>Facebook</h3></li>
+      <li>
+        <h3>Email</h3>
+        <form name="loginForm" novalidate>
+            <label>email </label>
+            <input type="email" required></input>
+            <input type="text" required></input>
+            <input type="text" required></input>
+            <input type="submit"/>
+        </form>
+
+      </li>
+    </ul>
+</div>
