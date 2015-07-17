@@ -19,7 +19,7 @@ $level4: 0px 14px 28px rgba(0,0,0,0.25), 0px 10px 10px rgba(0,0,0,0.22);
 $level5: 0px 19px 38px rgba(0,0,0,0.30), 0px 15px 12px rgba(0,0,0,0.22);
 
 //transitions
-$slideInOut: cubic-bezier(0.65,-0.55,0.265,1.55);
+$slideInOut: cubic-bezier(0.65,-0.55,0.265,1.555);
 
 
 //mixins---------------------------------
@@ -68,8 +68,14 @@ $slideInOut: cubic-bezier(0.65,-0.55,0.265,1.55);
       @include circleSizeDec(60px,15px,.171875);
     }
 
-    @media(min-width:414px) {
+    @media(min-width:414px)  {
       @include circleSizeCalc(60px,15px,1.104);
+    }
+    @media(min-width:768px) and (max-width:991px){
+      @include circleSizeCalc(60px,15px,1.4);
+    }
+    @media(min-width:1200px){
+      @include circleSizeCalc(60px,15px,1.55);
     }
 
   }
@@ -83,8 +89,14 @@ $slideInOut: cubic-bezier(0.65,-0.55,0.265,1.55);
       @include circleSizeDec(80px,23px,.171875);
     }
 
-    @media(min-width:414px) {
+    @media(min-width:414px)  {
       @include circleSizeCalc(80px,23px,1.104);
+    }
+    @media(min-width:768px) and (max-width:991px)  {
+      @include circleSizeCalc(80px,23px,1.4);
+    }
+    @media(min-width:1200px)  {
+      @include circleSizeCalc(80px,23px,1.55);
     }
   }
   @if $importance == 3 {
@@ -97,8 +109,14 @@ $slideInOut: cubic-bezier(0.65,-0.55,0.265,1.55);
       @include circleSizeDec(110px,40px,.171875);
     }
 
-    @media(min-width:414px) {
+    @media(min-width:414px)  {
       @include circleSizeCalc(110px,40px,1.104);
+    }
+    @media(min-width:768px) and (max-width:991px)  {
+      @include circleSizeCalc(110px,40px,1.4);
+    }
+    @media(min-width:1200px) {
+      @include circleSizeCalc(110px,40px,1.55);
     }
   }
 
@@ -126,9 +144,17 @@ $slideInOut: cubic-bezier(0.65,-0.55,0.265,1.55);
     top:$t - ($t * .171875);
     left:$l - ($l * .171875);
   }
-  @media(min-width:414px) {
+  @media(min-width:414px)  {
     top: $t * 1.104;
     left: $l * 1.104;
+  }
+  @media(min-width:768px) and (max-width:991px)  {
+    top: $t * 1.4;
+    left: $l * 1.4;
+  }
+  @media(min-width:1200px)  {
+    top: $t * 1.55;
+    left: $l * 1.55;
   }
 
 }
