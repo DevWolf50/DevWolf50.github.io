@@ -606,10 +606,17 @@ section {
   background-repeat: no-repeat !important;
   height: 200px;
   width: 80%;
-  box-shadow: 0 3px 6px rgba(0,0,0,.24);
+  box-shadow: $level2;
   margin: auto;
   border-radius: 5px;
   margin-bottom: 10px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+
+  &:hover {
+    box-shadow: $level3;
+  }
 }
 
 #webhubBanner {
@@ -684,6 +691,14 @@ section {
 .portfolioSocialIcon {
   color: $textColor;
     text-shadow: $level3;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+
+    &:hover {
+      color: $primaryColor;
+      text-shadow: $level4;
+    }
 
     @media (min-width: 992px) {
       font-size: 4.5rem;
